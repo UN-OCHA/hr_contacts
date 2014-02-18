@@ -15,12 +15,10 @@ function hr_contacts_menu_alter(&$items) {
 
 function hr_contacts_add_node_access($op, $node, $account = NULL) {
   $access = node_access($op, $node, $account);
-  if ($access == TRUE) {
-    $context = og_context();
-    if (!empty($context['gid'])) {
-      if (!og_is_member($context['group_type'], $context['gid'])) {
-       $access = FALSE;
-      }
+  if ($access == TRUE && isset($_GET[OG_AUDIENCE_FIELD])) {
+    $gid = $_GET[OG_AUDIENCE_FIELD];
+    if (!og_is_member('node', $gid)) {
+      $access = FALSE;
     }
   }
   return $access;
