@@ -160,7 +160,7 @@ function hr_contacts_og_features_toggle($entity, $entity_id, $entity_type, $feat
     }
     else {
       // See if menu link already exists
-      $menu_link = menu_link_get_preferred('node/'.$entity_id.'/contacts', OG_MENU_SINGLE_MENU_NAME));
+      $menu_link = menu_link_get_preferred('node/'.$entity_id.'/contacts', OG_MENU_SINGLE_MENU_NAME);
       if (empty($menu_link)) {
         $menu_link = array(
           'link_path' => 'node/'.$entity_id.'/contacts',
