@@ -38,14 +38,58 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
   $handler->display->display_options['empty']['area']['content'] = 'There are no results';
   $handler->display->display_options['empty']['area']['format'] = 'plain_text';
+  /* Field: Indexed Node: Clusters/Sectors */
+  $handler->display->display_options['fields']['field_bundles']['id'] = 'field_bundles';
+  $handler->display->display_options['fields']['field_bundles']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_bundles']['field'] = 'field_bundles';
+  $handler->display->display_options['fields']['field_bundles']['link_to_entity'] = 0;
+  $handler->display->display_options['fields']['field_bundles']['view_mode'] = 'full';
+  $handler->display->display_options['fields']['field_bundles']['bypass_access'] = 0;
   /* Field: Indexed Node: First name */
   $handler->display->display_options['fields']['field_first_name']['id'] = 'field_first_name';
   $handler->display->display_options['fields']['field_first_name']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_first_name']['field'] = 'field_first_name';
+  $handler->display->display_options['fields']['field_first_name']['type'] = 'title_linked';
+  $handler->display->display_options['fields']['field_first_name']['settings'] = array(
+    'title_style' => '_none',
+    'title_link' => 'content',
+    'title_class' => '',
+  );
   /* Field: Indexed Node: Last name */
   $handler->display->display_options['fields']['field_last_name']['id'] = 'field_last_name';
   $handler->display->display_options['fields']['field_last_name']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_last_name']['field'] = 'field_last_name';
+  $handler->display->display_options['fields']['field_last_name']['type'] = 'title_linked';
+  $handler->display->display_options['fields']['field_last_name']['settings'] = array(
+    'title_style' => '_none',
+    'title_link' => 'content',
+    'title_class' => '',
+  );
+  /* Field: Indexed Node: Main Email */
+  $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
+  $handler->display->display_options['fields']['field_email']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
+  /* Field: Indexed Node: Job Title */
+  $handler->display->display_options['fields']['field_job_title']['id'] = 'field_job_title';
+  $handler->display->display_options['fields']['field_job_title']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_job_title']['field'] = 'field_job_title';
+  $handler->display->display_options['fields']['field_job_title']['link_to_entity'] = 0;
+  $handler->display->display_options['fields']['field_job_title']['view_mode'] = 'full';
+  $handler->display->display_options['fields']['field_job_title']['bypass_access'] = 0;
+  /* Field: Indexed Node: Organization */
+  $handler->display->display_options['fields']['field_organizations']['id'] = 'field_organizations';
+  $handler->display->display_options['fields']['field_organizations']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_organizations']['field'] = 'field_organizations';
+  $handler->display->display_options['fields']['field_organizations']['link_to_entity'] = 0;
+  $handler->display->display_options['fields']['field_organizations']['view_mode'] = 'full';
+  $handler->display->display_options['fields']['field_organizations']['bypass_access'] = 0;
+  /* Field: Indexed Node: Location */
+  $handler->display->display_options['fields']['field_location']['id'] = 'field_location';
+  $handler->display->display_options['fields']['field_location']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_location']['field'] = 'field_location';
+  $handler->display->display_options['fields']['field_location']['link_to_entity'] = 0;
+  $handler->display->display_options['fields']['field_location']['view_mode'] = 'full';
+  $handler->display->display_options['fields']['field_location']['bypass_access'] = 0;
   /* Contextual filter: Indexed Node: Groups audience */
   $handler->display->display_options['arguments']['og_group_ref']['id'] = 'og_group_ref';
   $handler->display->display_options['arguments']['og_group_ref']['table'] = 'search_api_index_default_node_index';
@@ -136,7 +180,266 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Indexed Node: Clusters/Sectors */
+  $handler->display->display_options['fields']['field_bundles']['id'] = 'field_bundles';
+  $handler->display->display_options['fields']['field_bundles']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_bundles']['field'] = 'field_bundles';
+  $handler->display->display_options['fields']['field_bundles']['list']['separator'] = ';';
+  $handler->display->display_options['fields']['field_bundles']['link_to_entity'] = 0;
+  $handler->display->display_options['fields']['field_bundles']['view_mode'] = 'full';
+  $handler->display->display_options['fields']['field_bundles']['bypass_access'] = 0;
+  /* Field: Indexed Node: First name */
+  $handler->display->display_options['fields']['field_first_name']['id'] = 'field_first_name';
+  $handler->display->display_options['fields']['field_first_name']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_first_name']['field'] = 'field_first_name';
+  $handler->display->display_options['fields']['field_first_name']['type'] = 'title_linked';
+  $handler->display->display_options['fields']['field_first_name']['settings'] = array(
+    'title_style' => '_none',
+    'title_link' => 'content',
+    'title_class' => '',
+  );
+  /* Field: Indexed Node: Last name */
+  $handler->display->display_options['fields']['field_last_name']['id'] = 'field_last_name';
+  $handler->display->display_options['fields']['field_last_name']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_last_name']['field'] = 'field_last_name';
+  $handler->display->display_options['fields']['field_last_name']['type'] = 'title_linked';
+  $handler->display->display_options['fields']['field_last_name']['settings'] = array(
+    'title_style' => '_none',
+    'title_link' => 'content',
+    'title_class' => '',
+  );
+  /* Field: Indexed Node: Main Email */
+  $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
+  $handler->display->display_options['fields']['field_email']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
+  /* Field: Indexed Node: Phones */
+  $handler->display->display_options['fields']['field_phones']['id'] = 'field_phones';
+  $handler->display->display_options['fields']['field_phones']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_phones']['field'] = 'field_phones';
+  $handler->display->display_options['fields']['field_phones']['click_sort_column'] = 'numbertype';
+  $handler->display->display_options['fields']['field_phones']['settings'] = array(
+    'components' => array(
+      'country' => 0,
+      'numbertype' => 0,
+    ),
+    'full_hcard' => 0,
+    'as_tel_link' => 0,
+    'raw' => 1,
+    'allow_alpha' => 0,
+    'country_name_position' => 'after',
+    'numbertype_position' => 'before',
+  );
+  $handler->display->display_options['fields']['field_phones']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_phones']['separator'] = ';';
+  /* Field: Indexed Node: Organization */
+  $handler->display->display_options['fields']['field_organizations']['id'] = 'field_organizations';
+  $handler->display->display_options['fields']['field_organizations']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_organizations']['field'] = 'field_organizations';
+  $handler->display->display_options['fields']['field_organizations']['list']['separator'] = ';';
+  $handler->display->display_options['fields']['field_organizations']['link_to_entity'] = 0;
+  $handler->display->display_options['fields']['field_organizations']['view_mode'] = 'full';
+  $handler->display->display_options['fields']['field_organizations']['bypass_access'] = 0;
+  /* Field: Indexed Node: Job Title */
+  $handler->display->display_options['fields']['field_job_title']['id'] = 'field_job_title';
+  $handler->display->display_options['fields']['field_job_title']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_job_title']['field'] = 'field_job_title';
+  $handler->display->display_options['fields']['field_job_title']['link_to_entity'] = 0;
+  $handler->display->display_options['fields']['field_job_title']['view_mode'] = 'full';
+  $handler->display->display_options['fields']['field_job_title']['bypass_access'] = 0;
+  /* Field: Indexed Node: Location */
+  $handler->display->display_options['fields']['field_location']['id'] = 'field_location';
+  $handler->display->display_options['fields']['field_location']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_location']['field'] = 'field_location';
+  $handler->display->display_options['fields']['field_location']['link_to_entity'] = 0;
+  $handler->display->display_options['fields']['field_location']['view_mode'] = 'full';
+  $handler->display->display_options['fields']['field_location']['bypass_access'] = 0;
+  /* Field: Indexed Node: Coordination hubs */
+  $handler->display->display_options['fields']['field_coordination_hubs']['id'] = 'field_coordination_hubs';
+  $handler->display->display_options['fields']['field_coordination_hubs']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_coordination_hubs']['field'] = 'field_coordination_hubs';
+  $handler->display->display_options['fields']['field_coordination_hubs']['list']['separator'] = ';';
+  $handler->display->display_options['fields']['field_coordination_hubs']['link_to_entity'] = 0;
+  $handler->display->display_options['fields']['field_coordination_hubs']['view_mode'] = 'full';
+  $handler->display->display_options['fields']['field_coordination_hubs']['bypass_access'] = 0;
+  /* Field: Indexed Node: Funding methods */
+  $handler->display->display_options['fields']['field_funding_methods']['id'] = 'field_funding_methods';
+  $handler->display->display_options['fields']['field_funding_methods']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_funding_methods']['field'] = 'field_funding_methods';
+  $handler->display->display_options['fields']['field_funding_methods']['label'] = 'Fundings';
+  $handler->display->display_options['fields']['field_funding_methods']['list']['separator'] = ';';
+  $handler->display->display_options['fields']['field_funding_methods']['link_to_entity'] = 0;
+  $handler->display->display_options['fields']['field_funding_methods']['view_mode'] = 'full';
+  $handler->display->display_options['fields']['field_funding_methods']['bypass_access'] = 0;
+  /* Field: Indexed Node: Themes */
+  $handler->display->display_options['fields']['field_themes']['id'] = 'field_themes';
+  $handler->display->display_options['fields']['field_themes']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_themes']['field'] = 'field_themes';
+  $handler->display->display_options['fields']['field_themes']['list']['separator'] = ';';
+  $handler->display->display_options['fields']['field_themes']['link_to_entity'] = 0;
+  $handler->display->display_options['fields']['field_themes']['view_mode'] = 'full';
+  $handler->display->display_options['fields']['field_themes']['bypass_access'] = 0;
+  /* Field: Indexed Node: Emergencies */
+  $handler->display->display_options['fields']['field_emergencies']['id'] = 'field_emergencies';
+  $handler->display->display_options['fields']['field_emergencies']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_emergencies']['field'] = 'field_emergencies';
+  $handler->display->display_options['fields']['field_emergencies']['list']['separator'] = ';';
+  $handler->display->display_options['fields']['field_emergencies']['link_to_entity'] = 0;
+  $handler->display->display_options['fields']['field_emergencies']['view_mode'] = 'full';
+  $handler->display->display_options['fields']['field_emergencies']['bypass_access'] = 0;
   $handler->display->display_options['path'] = 'node/%/contacts/csv';
+  $handler->display->display_options['displays'] = array(
+    'list' => 'list',
+    'table' => 'table',
+    'default' => 0,
+  );
+  $handler->display->display_options['segment_size'] = '100';
+
+  /* Display: XML */
+  $handler = $view->new_display('views_data_export', 'XML', 'xml');
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_xml';
+  $handler->display->display_options['style_options']['provide_file'] = 0;
+  $handler->display->display_options['style_options']['parent_sort'] = 0;
+  $handler->display->display_options['style_options']['transform'] = 1;
+  $handler->display->display_options['style_options']['transform_type'] = 'camel';
+  $handler->display->display_options['style_options']['root_node'] = 'contacts';
+  $handler->display->display_options['style_options']['item_node'] = 'contact';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Indexed Node: Clusters/Sectors */
+  $handler->display->display_options['fields']['field_bundles']['id'] = 'field_bundles';
+  $handler->display->display_options['fields']['field_bundles']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_bundles']['field'] = 'field_bundles';
+  $handler->display->display_options['fields']['field_bundles']['label'] = 'Clusters';
+  $handler->display->display_options['fields']['field_bundles']['list']['separator'] = ';';
+  $handler->display->display_options['fields']['field_bundles']['link_to_entity'] = 0;
+  $handler->display->display_options['fields']['field_bundles']['view_mode'] = 'full';
+  $handler->display->display_options['fields']['field_bundles']['bypass_access'] = 0;
+  /* Field: Indexed Node: First name */
+  $handler->display->display_options['fields']['field_first_name']['id'] = 'field_first_name';
+  $handler->display->display_options['fields']['field_first_name']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_first_name']['field'] = 'field_first_name';
+  $handler->display->display_options['fields']['field_first_name']['type'] = 'text_plain';
+  $handler->display->display_options['fields']['field_first_name']['settings'] = array(
+    'title_style' => '_none',
+    'title_link' => 'content',
+    'title_class' => '',
+  );
+  /* Field: Indexed Node: Last name */
+  $handler->display->display_options['fields']['field_last_name']['id'] = 'field_last_name';
+  $handler->display->display_options['fields']['field_last_name']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_last_name']['field'] = 'field_last_name';
+  $handler->display->display_options['fields']['field_last_name']['type'] = 'text_plain';
+  $handler->display->display_options['fields']['field_last_name']['settings'] = array(
+    'title_style' => '_none',
+    'title_link' => 'content',
+    'title_class' => '',
+  );
+  /* Field: Indexed Node: Main Email */
+  $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
+  $handler->display->display_options['fields']['field_email']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
+  $handler->display->display_options['fields']['field_email']['type'] = 'email_plain';
+  /* Field: Indexed Node: Phones */
+  $handler->display->display_options['fields']['field_phones']['id'] = 'field_phones';
+  $handler->display->display_options['fields']['field_phones']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_phones']['field'] = 'field_phones';
+  $handler->display->display_options['fields']['field_phones']['click_sort_column'] = 'numbertype';
+  $handler->display->display_options['fields']['field_phones']['settings'] = array(
+    'components' => array(
+      'country' => 0,
+      'numbertype' => 0,
+    ),
+    'full_hcard' => 0,
+    'as_tel_link' => 0,
+    'raw' => 1,
+    'allow_alpha' => 0,
+    'country_name_position' => 'after',
+    'numbertype_position' => 'before',
+  );
+  $handler->display->display_options['fields']['field_phones']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_phones']['separator'] = ';';
+  /* Field: Indexed Node: Organization */
+  $handler->display->display_options['fields']['field_organizations']['id'] = 'field_organizations';
+  $handler->display->display_options['fields']['field_organizations']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_organizations']['field'] = 'field_organizations';
+  $handler->display->display_options['fields']['field_organizations']['list']['separator'] = ';';
+  $handler->display->display_options['fields']['field_organizations']['link_to_entity'] = 0;
+  $handler->display->display_options['fields']['field_organizations']['view_mode'] = 'full';
+  $handler->display->display_options['fields']['field_organizations']['bypass_access'] = 0;
+  /* Field: Indexed Node: Job Title */
+  $handler->display->display_options['fields']['field_job_title']['id'] = 'field_job_title';
+  $handler->display->display_options['fields']['field_job_title']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_job_title']['field'] = 'field_job_title';
+  $handler->display->display_options['fields']['field_job_title']['link_to_entity'] = 0;
+  $handler->display->display_options['fields']['field_job_title']['view_mode'] = 'full';
+  $handler->display->display_options['fields']['field_job_title']['bypass_access'] = 0;
+  /* Field: Indexed Node: Location */
+  $handler->display->display_options['fields']['field_location']['id'] = 'field_location';
+  $handler->display->display_options['fields']['field_location']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_location']['field'] = 'field_location';
+  $handler->display->display_options['fields']['field_location']['link_to_entity'] = 0;
+  $handler->display->display_options['fields']['field_location']['view_mode'] = 'full';
+  $handler->display->display_options['fields']['field_location']['bypass_access'] = 0;
+  /* Field: Indexed Node: Coordination hubs */
+  $handler->display->display_options['fields']['field_coordination_hubs']['id'] = 'field_coordination_hubs';
+  $handler->display->display_options['fields']['field_coordination_hubs']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_coordination_hubs']['field'] = 'field_coordination_hubs';
+  $handler->display->display_options['fields']['field_coordination_hubs']['list']['separator'] = ';';
+  $handler->display->display_options['fields']['field_coordination_hubs']['link_to_entity'] = 0;
+  $handler->display->display_options['fields']['field_coordination_hubs']['view_mode'] = 'full';
+  $handler->display->display_options['fields']['field_coordination_hubs']['bypass_access'] = 0;
+  /* Field: Indexed Node: Funding methods */
+  $handler->display->display_options['fields']['field_funding_methods']['id'] = 'field_funding_methods';
+  $handler->display->display_options['fields']['field_funding_methods']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_funding_methods']['field'] = 'field_funding_methods';
+  $handler->display->display_options['fields']['field_funding_methods']['label'] = 'Fundings';
+  $handler->display->display_options['fields']['field_funding_methods']['list']['separator'] = ';';
+  $handler->display->display_options['fields']['field_funding_methods']['link_to_entity'] = 0;
+  $handler->display->display_options['fields']['field_funding_methods']['view_mode'] = 'full';
+  $handler->display->display_options['fields']['field_funding_methods']['bypass_access'] = 0;
+  /* Field: Indexed Node: Themes */
+  $handler->display->display_options['fields']['field_themes']['id'] = 'field_themes';
+  $handler->display->display_options['fields']['field_themes']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_themes']['field'] = 'field_themes';
+  $handler->display->display_options['fields']['field_themes']['list']['separator'] = ';';
+  $handler->display->display_options['fields']['field_themes']['link_to_entity'] = 0;
+  $handler->display->display_options['fields']['field_themes']['view_mode'] = 'full';
+  $handler->display->display_options['fields']['field_themes']['bypass_access'] = 0;
+  /* Field: Indexed Node: Emergencies */
+  $handler->display->display_options['fields']['field_emergencies']['id'] = 'field_emergencies';
+  $handler->display->display_options['fields']['field_emergencies']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_emergencies']['field'] = 'field_emergencies';
+  $handler->display->display_options['fields']['field_emergencies']['list']['separator'] = ';';
+  $handler->display->display_options['fields']['field_emergencies']['link_to_entity'] = 0;
+  $handler->display->display_options['fields']['field_emergencies']['view_mode'] = 'full';
+  $handler->display->display_options['fields']['field_emergencies']['bypass_access'] = 0;
+  $handler->display->display_options['path'] = 'node/%/contacts/xml';
+  $handler->display->display_options['displays'] = array(
+    'list' => 'list',
+    'table' => 'table',
+    'default' => 0,
+  );
+  $handler->display->display_options['segment_size'] = '100';
+
+  /* Display: EMAILS */
+  $handler = $view->new_display('views_data_export', 'EMAILS', 'emails');
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_txt';
+  $handler->display->display_options['style_options']['attach_text'] = 'EMAILS';
+  $handler->display->display_options['style_options']['provide_file'] = 0;
+  $handler->display->display_options['style_options']['parent_sort'] = 0;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Indexed Node: Main Email */
+  $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
+  $handler->display->display_options['fields']['field_email']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
+  $handler->display->display_options['fields']['field_email']['label'] = '';
+  $handler->display->display_options['fields']['field_email']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_email']['type'] = 'email_plain';
+  $handler->display->display_options['path'] = 'node/%/contacts/emails';
   $handler->display->display_options['displays'] = array(
     'list' => 'list',
     'table' => 'table',
@@ -158,13 +461,26 @@ function hr_contacts_views_default_views() {
     t('next ›'),
     t('last »'),
     t('There are no results'),
+    t('Clusters/Sectors'),
     t('First name'),
     t('Last name'),
+    t('Main Email'),
+    t('Job Title'),
+    t('Organization'),
+    t('Location'),
     t('All'),
     t('List'),
     t('Contacts'),
     t('Table'),
     t('CSV'),
+    t('Phones'),
+    t('Coordination hubs'),
+    t('Fundings'),
+    t('Themes'),
+    t('Emergencies'),
+    t('XML'),
+    t('Clusters'),
+    t('EMAILS'),
   );
   $export['hr_contacts'] = $view;
 
