@@ -284,13 +284,13 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['field_themes']['view_mode'] = 'full';
   $handler->display->display_options['fields']['field_themes']['bypass_access'] = 0;
   /* Field: Indexed Node: Emergencies */
-  $handler->display->display_options['fields']['field_emergencies']['id'] = 'field_emergencies';
-  $handler->display->display_options['fields']['field_emergencies']['table'] = 'search_api_index_default_node_index';
-  $handler->display->display_options['fields']['field_emergencies']['field'] = 'field_emergencies';
-  $handler->display->display_options['fields']['field_emergencies']['list']['separator'] = ';';
-  $handler->display->display_options['fields']['field_emergencies']['link_to_entity'] = 0;
-  $handler->display->display_options['fields']['field_emergencies']['view_mode'] = 'full';
-  $handler->display->display_options['fields']['field_emergencies']['bypass_access'] = 0;
+  $handler->display->display_options['fields']['field_disasters']['id'] = 'field_disasters';
+  $handler->display->display_options['fields']['field_disasters']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_disasters']['field'] = 'field_disasters';
+  $handler->display->display_options['fields']['field_disasters']['list']['separator'] = ';';
+  $handler->display->display_options['fields']['field_disasters']['link_to_entity'] = 0;
+  $handler->display->display_options['fields']['field_disasters']['view_mode'] = 'full';
+  $handler->display->display_options['fields']['field_disasters']['bypass_access'] = 0;
   $handler->display->display_options['path'] = 'node/%/contacts/csv';
   $handler->display->display_options['displays'] = array(
     'list' => 'list',
@@ -414,13 +414,13 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['field_themes']['view_mode'] = 'full';
   $handler->display->display_options['fields']['field_themes']['bypass_access'] = 0;
   /* Field: Indexed Node: Emergencies */
-  $handler->display->display_options['fields']['field_emergencies']['id'] = 'field_emergencies';
-  $handler->display->display_options['fields']['field_emergencies']['table'] = 'search_api_index_default_node_index';
-  $handler->display->display_options['fields']['field_emergencies']['field'] = 'field_emergencies';
-  $handler->display->display_options['fields']['field_emergencies']['list']['separator'] = ';';
-  $handler->display->display_options['fields']['field_emergencies']['link_to_entity'] = 0;
-  $handler->display->display_options['fields']['field_emergencies']['view_mode'] = 'full';
-  $handler->display->display_options['fields']['field_emergencies']['bypass_access'] = 0;
+  $handler->display->display_options['fields']['field_disasters']['id'] = 'field_disasters';
+  $handler->display->display_options['fields']['field_disasters']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['fields']['field_disasters']['field'] = 'field_disasters';
+  $handler->display->display_options['fields']['field_disasters']['list']['separator'] = ';';
+  $handler->display->display_options['fields']['field_disasters']['link_to_entity'] = 0;
+  $handler->display->display_options['fields']['field_disasters']['view_mode'] = 'full';
+  $handler->display->display_options['fields']['field_disasters']['bypass_access'] = 0;
   $handler->display->display_options['path'] = 'node/%/contacts/xml';
   $handler->display->display_options['displays'] = array(
     'list' => 'list',

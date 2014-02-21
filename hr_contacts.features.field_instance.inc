@@ -305,8 +305,8 @@ function hr_contacts_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-hr_contact-field_emergencies'
-  $field_instances['node-hr_contact-field_emergencies'] = array(
+  // Exported field_instance: 'node-hr_contact-field_disasters'
+  $field_instances['node-hr_contact-field_disasters'] = array(
     'bundle' => 'hr_contact',
     'default_value' => NULL,
     'default_value_function' => '',
@@ -336,7 +336,7 @@ function hr_contacts_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_emergencies',
+    'field_name' => 'field_disasters',
     'label' => 'Emergencies',
     'required' => 0,
     'settings' => array(

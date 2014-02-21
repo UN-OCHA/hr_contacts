@@ -45,9 +45,9 @@ function hr_contacts_feeds_tamper_default() {
   $feeds_tamper = new stdClass();
   $feeds_tamper->disabled = FALSE; /* Edit this to true to make a default feeds_tamper disabled initially */
   $feeds_tamper->api_version = 2;
-  $feeds_tamper->id = 'hr_contacts-emergencies-explode';
+  $feeds_tamper->id = 'hr_contacts-disasters-explode';
   $feeds_tamper->importer = 'hr_contacts';
-  $feeds_tamper->source = 'Emergencies';
+  $feeds_tamper->source = 'Disasters';
   $feeds_tamper->plugin_id = 'explode';
   $feeds_tamper->settings = array(
     'separator' => ';',
@@ -56,7 +56,7 @@ function hr_contacts_feeds_tamper_default() {
   );
   $feeds_tamper->weight = 0;
   $feeds_tamper->description = 'Explode';
-  $export['hr_contacts-emergencies-explode'] = $feeds_tamper;
+  $export['hr_contacts-disasters-explode'] = $feeds_tamper;
 
   $feeds_tamper = new stdClass();
   $feeds_tamper->disabled = FALSE; /* Edit this to true to make a default feeds_tamper disabled initially */
@@ -157,9 +157,9 @@ function hr_contacts_feeds_tamper_default() {
   $feeds_tamper = new stdClass();
   $feeds_tamper->disabled = FALSE; /* Edit this to true to make a default feeds_tamper disabled initially */
   $feeds_tamper->api_version = 2;
-  $feeds_tamper->id = 'hr_contacts_1x-emergencies-explode';
+  $feeds_tamper->id = 'hr_contacts_1x-disasters-explode';
   $feeds_tamper->importer = 'hr_contacts_1x';
-  $feeds_tamper->source = 'Emergencies';
+  $feeds_tamper->source = 'Disasters';
   $feeds_tamper->plugin_id = 'explode';
   $feeds_tamper->settings = array(
     'separator' => ';',
@@ -168,7 +168,7 @@ function hr_contacts_feeds_tamper_default() {
   );
   $feeds_tamper->weight = 0;
   $feeds_tamper->description = 'Explode';
-  $export['hr_contacts_1x-emergencies-explode'] = $feeds_tamper;
+  $export['hr_contacts_1x-disasters-explode'] = $feeds_tamper;
 
   $feeds_tamper = new stdClass();
   $feeds_tamper->disabled = FALSE; /* Edit this to true to make a default feeds_tamper disabled initially */

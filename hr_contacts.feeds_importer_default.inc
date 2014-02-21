@@ -98,8 +98,8 @@ function hr_contacts_feeds_importer_default() {
             'unique' => FALSE,
           ),
           11 => array(
-            'source' => 'Emergencies',
-            'target' => 'field_emergencies:label',
+            'source' => 'Disasters',
+            'target' => 'field_disasters:label',
             'unique' => FALSE,
           ),
           12 => array(
@@ -211,8 +211,8 @@ function hr_contacts_feeds_importer_default() {
             'unique' => FALSE,
           ),
           11 => array(
-            'source' => 'Emergencies',
-            'target' => 'field_emergencies:label',
+            'source' => 'Disasters',
+            'target' => 'field_disasters:label',
             'unique' => FALSE,
           ),
           12 => array(
