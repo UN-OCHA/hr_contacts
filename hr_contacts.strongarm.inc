@@ -107,7 +107,7 @@ function hr_contacts_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_hr_contact_pattern';
-  $strongarm->value = '[node:og-group-ref:url:path]/contacts/[node:title]';
+  $strongarm->value = '[node:og-group-ref:url:path]/contact/[node:title]';
   $export['pathauto_node_hr_contact_pattern'] = $strongarm;
 
   return $export;
