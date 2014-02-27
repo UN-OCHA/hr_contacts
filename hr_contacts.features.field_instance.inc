@@ -868,56 +868,6 @@ function hr_contacts_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-hr_contact-field_other_contact_information'
-  $field_instances['node-hr_contact-field_other_contact_information'] = array(
-    'bundle' => 'hr_contact',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'field_collection',
-        'settings' => array(
-          'add' => 'Add',
-          'delete' => 'Delete',
-          'description' => TRUE,
-          'edit' => 'Edit',
-          'view_mode' => 'full',
-        ),
-        'type' => 'field_collection_view',
-        'weight' => 12,
-      ),
-      'search_result' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 16,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 5,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_other_contact_information',
-    'label' => 'Other contact information',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'field_collection',
-      'settings' => array(),
-      'type' => 'field_collection_embed',
-      'weight' => 17,
-    ),
-  );
-
   // Exported field_instance: 'node-hr_contact-field_phones'
   $field_instances['node-hr_contact-field_phones'] = array(
     'bundle' => 'hr_contact',
@@ -1271,6 +1221,71 @@ function hr_contacts_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-hr_contact-field_social_media'
+  $field_instances['node-hr_contact-field_social_media'] = array(
+    'bundle' => 'hr_contact',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link_icons',
+        'settings' => array(),
+        'type' => 'link_icons',
+        'weight' => 21,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_social_media',
+    'label' => 'Social media',
+    'required' => 0,
+    'settings' => array(
+      'attributes' => array(
+        'class' => '',
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => '_blank',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'rel_remove' => 'default',
+      'title' => 'none',
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 17,
+    ),
+  );
+
   // Exported field_instance: 'node-hr_contact-field_themes'
   $field_instances['node-hr_contact-field_themes'] = array(
     'bundle' => 'hr_contact',
@@ -1534,10 +1549,10 @@ function hr_contacts_field_default_field_instances() {
   t('Main Email');
   t('Organization');
   t('Organization name');
-  t('Other contact information');
   t('Other emails');
   t('Phones');
   t('Responder in');
+  t('Social media');
   t('The locations you cover');
   t('Themes');
   t('Title');
