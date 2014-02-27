@@ -53,30 +53,12 @@ function _hr_contacts_copy_field(&$node_form, $profile, $field_name, $type) {
           $node_form[$field_name][LANGUAGE_NONE][$i]['email']['#default_value'] = $val['email'];
         }
         break;
-      case 'field_collection':
-        $node_form[$field_name][LANGUAGE_NONE]['#max_delta'] = 1;
+      case 'link':
         foreach ($profile->{$field_name}[LANGUAGE_NONE] as $i => $val) {
-          $field_collection = field_collection_item_load($profile->{$field_name}[LANGUAGE_NONE][$i]['value']);
           if ($i > 0) {
             $node_form[$field_name][LANGUAGE_NONE][$i] = $node_form[$field_name][LANGUAGE_NONE][0];
-            $node_form[$field_name][LANGUAGE_NONE][$i]['#parents'][5] = $i;
           }
-          foreach ($node_form[$field_name][LANGUAGE_NONE][$i] as $fc_field_name => &$fc_field) {
-            if (strpos($fc_field_name, 'field') === 0) {
-              if ($i > 0) {
-                $fc_field[LANGUAGE_NONE]['#field_parents'][5] = $i;
-                $fc_field[LANGUAGE_NONE][0]['#field_parents'][5] = $i;
-                $fc_field[LANGUAGE_NONE][0]['value']['#field_parents'][5] = $i;
-                //debug($fc_field);
-              }
-              if (isset($fc_field[LANGUAGE_NONE][0]['value']['#type']) && $fc_field[LANGUAGE_NONE][0]['value']['#type'] == 'textfield') {
-                $fc_field[LANGUAGE_NONE][0]['value']['#default_value'] = $field_collection->{$fc_field_name}[LANGUAGE_NONE][0]['value'];
-              }
-              elseif (isset($fc_field[LANGUAGE_NONE]['#type']) && $fc_field[LANGUAGE_NONE]['#type'] == 'select') {
-                $fc_field[LANGUAGE_NONE]['#default_value'] = $field_collection->{$fc_field_name}[LANGUAGE_NONE][0]['value'];
-              }
-            }
-          }
+          $node_form[$field_name][LANGUAGE_NONE][$i]['#default_value'] = $val;
         }
         break;
     }
@@ -102,7 +84,7 @@ function hr_contacts_form_og_ui_confirm_subscribe_alter(&$form, &$form_state) {
       'field_phones' => 'phone',
       'field_location' => 'entityreference',
       'field_emails' => 'email',
-      'field_other_contact_information' => 'field_collection',
+      'field_social_media' => 'link',
     );
 
     foreach ($fields as $field_name => $type) {
