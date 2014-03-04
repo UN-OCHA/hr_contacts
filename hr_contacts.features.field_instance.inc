@@ -130,7 +130,7 @@ function hr_contacts_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 4,
+        'weight' => 3,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -196,7 +196,7 @@ function hr_contacts_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 17,
+        'weight' => 15,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -250,7 +250,7 @@ function hr_contacts_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 18,
+        'weight' => 16,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -301,7 +301,7 @@ function hr_contacts_field_default_field_instances() {
         'module' => 'email',
         'settings' => array(),
         'type' => 'email_default',
-        'weight' => 5,
+        'weight' => 4,
       ),
       'search_result' => array(
         'label' => 'inline',
@@ -349,7 +349,7 @@ function hr_contacts_field_default_field_instances() {
         'module' => 'email',
         'settings' => array(),
         'type' => 'email_default',
-        'weight' => 6,
+        'weight' => 5,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -379,7 +379,7 @@ function hr_contacts_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'email_textfield',
-      'weight' => 16,
+      'weight' => 17,
     ),
   );
 
@@ -395,7 +395,7 @@ function hr_contacts_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 1,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -445,7 +445,7 @@ function hr_contacts_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 19,
+        'weight' => 17,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -499,7 +499,7 @@ function hr_contacts_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 10,
+        'weight' => 11,
       ),
       'search_result' => array(
         'label' => 'inline',
@@ -559,7 +559,7 @@ function hr_contacts_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 11,
+        'weight' => 12,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -606,7 +606,7 @@ function hr_contacts_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 2,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -773,7 +773,7 @@ function hr_contacts_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 8,
+        'weight' => 9,
       ),
       'search_result' => array(
         'label' => 'inline',
@@ -833,7 +833,7 @@ function hr_contacts_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 9,
+        'weight' => 10,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -892,7 +892,7 @@ function hr_contacts_field_default_field_instances() {
           'raw' => FALSE,
         ),
         'type' => 'phone_international',
-        'weight' => 7,
+        'weight' => 6,
       ),
       'search_result' => array(
         'label' => 'inline',
@@ -1221,6 +1221,57 @@ function hr_contacts_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-hr_contact-field_skype_id'
+  $field_instances['node-hr_contact-field_skype_id'] = array(
+    'bundle' => 'hr_contact',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'hr_users',
+        'settings' => array(),
+        'type' => 'hr_users_skype',
+        'weight' => 8,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_skype_id',
+    'label' => 'Skype ID',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 16,
+    ),
+  );
+
   // Exported field_instance: 'node-hr_contact-field_social_media'
   $field_instances['node-hr_contact-field_social_media'] = array(
     'bundle' => 'hr_contact',
@@ -1229,11 +1280,11 @@ function hr_contacts_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'link_icons',
         'settings' => array(),
         'type' => 'link_icons',
-        'weight' => 21,
+        'weight' => 7,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -1282,7 +1333,7 @@ function hr_contacts_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 17,
+      'weight' => 18,
     ),
   );
 
@@ -1301,7 +1352,7 @@ function hr_contacts_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 20,
+        'weight' => 18,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -1415,7 +1466,7 @@ function hr_contacts_field_default_field_instances() {
       'module' => 'og',
       'settings' => array(),
       'type' => 'og_complex',
-      'weight' => 18,
+      'weight' => 19,
     ),
   );
 
@@ -1552,6 +1603,7 @@ function hr_contacts_field_default_field_instances() {
   t('Other emails');
   t('Phones');
   t('Responder in');
+  t('Skype ID');
   t('Social media');
   t('The locations you cover');
   t('Themes');

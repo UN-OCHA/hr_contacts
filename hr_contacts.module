@@ -85,6 +85,7 @@ function hr_contacts_form_og_ui_confirm_subscribe_alter(&$form, &$form_state) {
       'field_location' => 'entityreference',
       'field_emails' => 'email',
       'field_social_media' => 'link',
+      'field_skype_id' => 'textfield',
     );
 
     foreach ($fields as $field_name => $type) {

@@ -62,10 +62,10 @@ function hr_contacts_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '19',
+          'weight' => '20',
         ),
         'redirect' => array(
-          'weight' => '20',
+          'weight' => '21',
         ),
       ),
       'display' => array(),
