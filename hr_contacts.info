@@ -33,7 +33,6 @@ dependencies[] = page_manager
 dependencies[] = panels_bootstrap_styles
 dependencies[] = phone
 dependencies[] = strongarm
-dependencies[] = subpathauto
 dependencies[] = text
 dependencies[] = views
 dependencies[] = views_content
