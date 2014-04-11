@@ -10,6 +10,26 @@
 function hr_contacts_og_features_default_permissions() {
   $permissions = array();
 
+  // Exported og permission: 'node:hr_operation:access authoring options of hr_contact content'
+  $permissions['node:hr_operation:access authoring options of hr_contact content'] = array(
+    'roles' => array(
+      'manager' => 'manager',
+    ),
+  );
+
+  // Exported og permission: 'node:hr_operation:access publishing options of hr_contact content'
+  $permissions['node:hr_operation:access publishing options of hr_contact content'] = array(
+    'roles' => array(),
+  );
+
+  // Exported og permission: 'node:hr_operation:access revisions options of hr_contact content'
+  $permissions['node:hr_operation:access revisions options of hr_contact content'] = array(
+    'roles' => array(
+      'editor' => 'editor',
+      'manager' => 'manager',
+    ),
+  );
+
   // Exported og permission: 'node:hr_operation:create hr_contact content'
   $permissions['node:hr_operation:create hr_contact content'] = array(
     'roles' => array(
@@ -54,6 +74,14 @@ function hr_contacts_og_features_default_permissions() {
       'editor' => 'editor',
       'manager' => 'manager',
       'member' => 'member',
+    ),
+  );
+
+  // Exported og permission: 'node:hr_operation:view any unpublished hr_contact content'
+  $permissions['node:hr_operation:view any unpublished hr_contact content'] = array(
+    'roles' => array(
+      'editor' => 'editor',
+      'manager' => 'manager',
     ),
   );
 
