@@ -66,7 +66,7 @@ function hr_contacts_default_page_manager_pages() {
     ),
   );
   $display = new panels_display();
-  $display->layout = 'onecol';
+  $display->layout = 'radix_boxton';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -80,6 +80,9 @@ function hr_contacts_default_page_manager_pages() {
       'middle' => array(
         'region_title' => '',
       ),
+      'contentmain' => array(
+        'region_title' => '',
+      ),
     ),
     'bottom' => array(
       'style' => 'naked',
@@ -90,6 +93,9 @@ function hr_contacts_default_page_manager_pages() {
     'middle' => array(
       'style' => 'bootstrap_styles:tabs',
     ),
+    'contentmain' => array(
+      'style' => 'bootstrap_styles:tabs',
+    ),
   );
   $display->cache = array();
   $display->title = '';
@@ -98,7 +104,7 @@ function hr_contacts_default_page_manager_pages() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-cea60945-aa3c-45be-8ab0-efcaac4a7525';
-    $pane->panel = 'middle';
+    $pane->panel = 'contentmain';
     $pane->type = 'views_panes';
     $pane->subtype = 'hr_contacts-table';
     $pane->shown = TRUE;
@@ -120,10 +126,10 @@ function hr_contacts_default_page_manager_pages() {
     $pane->locks = array();
     $pane->uuid = 'cea60945-aa3c-45be-8ab0-efcaac4a7525';
     $display->content['new-cea60945-aa3c-45be-8ab0-efcaac4a7525'] = $pane;
-    $display->panels['middle'][0] = 'new-cea60945-aa3c-45be-8ab0-efcaac4a7525';
+    $display->panels['contentmain'][0] = 'new-cea60945-aa3c-45be-8ab0-efcaac4a7525';
     $pane = new stdClass();
     $pane->pid = 'new-de5be48e-ba81-40e5-a143-5e7954c80246';
-    $pane->panel = 'middle';
+    $pane->panel = 'contentmain';
     $pane->type = 'views_panes';
     $pane->subtype = 'hr_contacts-list';
     $pane->shown = TRUE;
@@ -145,7 +151,7 @@ function hr_contacts_default_page_manager_pages() {
     $pane->locks = array();
     $pane->uuid = 'de5be48e-ba81-40e5-a143-5e7954c80246';
     $display->content['new-de5be48e-ba81-40e5-a143-5e7954c80246'] = $pane;
-    $display->panels['middle'][1] = 'new-de5be48e-ba81-40e5-a143-5e7954c80246';
+    $display->panels['contentmain'][1] = 'new-de5be48e-ba81-40e5-a143-5e7954c80246';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
