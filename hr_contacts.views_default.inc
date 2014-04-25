@@ -65,7 +65,7 @@ function hr_contacts_views_default_views() {
     'title_link' => 'content',
     'title_class' => '',
   );
-  /* Field: Indexed Node: Email */
+  /* Field: Indexed Node: Main Email */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
@@ -209,7 +209,7 @@ function hr_contacts_views_default_views() {
     'title_link' => 'content',
     'title_class' => '',
   );
-  /* Field: Indexed Node: Email */
+  /* Field: Indexed Node: Main Email */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
@@ -279,7 +279,7 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['field_themes']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_themes']['view_mode'] = 'full';
   $handler->display->display_options['fields']['field_themes']['bypass_access'] = 0;
-  /* Field: Indexed Node: Emergencies */
+  /* Field: Indexed Node: Disasters */
   $handler->display->display_options['fields']['field_disasters']['id'] = 'field_disasters';
   $handler->display->display_options['fields']['field_disasters']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_disasters']['field'] = 'field_disasters';
@@ -336,7 +336,7 @@ function hr_contacts_views_default_views() {
     'title_link' => 'content',
     'title_class' => '',
   );
-  /* Field: Indexed Node: Email */
+  /* Field: Indexed Node: Main Email */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
@@ -407,7 +407,7 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['field_themes']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_themes']['view_mode'] = 'full';
   $handler->display->display_options['fields']['field_themes']['bypass_access'] = 0;
-  /* Field: Indexed Node: Emergencies */
+  /* Field: Indexed Node: Disasters */
   $handler->display->display_options['fields']['field_disasters']['id'] = 'field_disasters';
   $handler->display->display_options['fields']['field_disasters']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_disasters']['field'] = 'field_disasters';
@@ -432,7 +432,7 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['style_options']['provide_file'] = 0;
   $handler->display->display_options['style_options']['parent_sort'] = 0;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Indexed Node: Email */
+  /* Field: Indexed Node: Main Email */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
@@ -464,7 +464,7 @@ function hr_contacts_views_default_views() {
     t('Clusters/Sectors'),
     t('First name'),
     t('Last name'),
-    t('Email'),
+    t('Main Email'),
     t('Job Title'),
     t('Organization'),
     t('Location'),
@@ -477,7 +477,7 @@ function hr_contacts_views_default_views() {
     t('Coordination hubs'),
     t('Fundings'),
     t('Themes'),
-    t('Emergencies'),
+    t('Disasters'),
     t('XML'),
     t('Clusters'),
     t('EMAILS'),
