@@ -82,6 +82,62 @@ function hr_contacts_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'hr_contacts_space_graphs';
+  $context->description = '';
+  $context->tag = 'Contacts';
+  $context->conditions = array(
+    'views' => array(
+      'values' => array(
+        'hr_contacts:graphs' => 'hr_contacts:graphs',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-ba6eb27d208223b4acf02c1aeaf3d8bf' => array(
+          'module' => 'views',
+          'delta' => 'ba6eb27d208223b4acf02c1aeaf3d8bf',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
+        'views-hr_contacts_graphs-by_cluster' => array(
+          'module' => 'views',
+          'delta' => 'hr_contacts_graphs-by_cluster',
+          'region' => 'content',
+          'weight' => '-8',
+        ),
+        'views-1426dd669d8b297763db81dc0d387a17' => array(
+          'module' => 'views',
+          'delta' => '1426dd669d8b297763db81dc0d387a17',
+          'region' => 'content',
+          'weight' => '-7',
+        ),
+        'views-hr_contacts_graphs-by_location' => array(
+          'module' => 'views',
+          'delta' => 'hr_contacts_graphs-by_location',
+          'region' => 'content',
+          'weight' => '-5',
+        ),
+        'views-d808a6a03dfc7b1b01187f1c4b62ed38' => array(
+          'module' => 'views',
+          'delta' => 'd808a6a03dfc7b1b01187f1c4b62ed38',
+          'region' => 'content',
+          'weight' => '-3',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Contacts');
+  $export['hr_contacts_space_graphs'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'hr_contacts_space_list';
   $context->description = '';
   $context->tag = 'Contacts';

@@ -69,7 +69,7 @@ function hr_contacts_views_default_views() {
     'title_link' => 'content',
     'title_class' => '',
   );
-  /* Field: Indexed Node: Email */
+  /* Field: Indexed Node: Main Email */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
@@ -80,11 +80,10 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['field_job_title']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_job_title']['view_mode'] = 'full';
   $handler->display->display_options['fields']['field_job_title']['bypass_access'] = 0;
-  /* Field: Indexed Node: Lead Agencies */
+  /* Field: Indexed Node: Organization */
   $handler->display->display_options['fields']['field_organizations']['id'] = 'field_organizations';
   $handler->display->display_options['fields']['field_organizations']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_organizations']['field'] = 'field_organizations';
-  $handler->display->display_options['fields']['field_organizations']['label'] = 'Organization';
   $handler->display->display_options['fields']['field_organizations']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_organizations']['view_mode'] = 'full';
   $handler->display->display_options['fields']['field_organizations']['bypass_access'] = 0;
@@ -298,7 +297,7 @@ function hr_contacts_views_default_views() {
     'title_link' => 'content',
     'title_class' => '',
   );
-  /* Field: Indexed Node: Email */
+  /* Field: Indexed Node: Main Email */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
@@ -321,7 +320,7 @@ function hr_contacts_views_default_views() {
   );
   $handler->display->display_options['fields']['field_phones']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_phones']['separator'] = ';';
-  /* Field: Indexed Node: Lead Agencies */
+  /* Field: Indexed Node: Organization */
   $handler->display->display_options['fields']['field_organizations']['id'] = 'field_organizations';
   $handler->display->display_options['fields']['field_organizations']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_organizations']['field'] = 'field_organizations';
@@ -426,7 +425,7 @@ function hr_contacts_views_default_views() {
     'title_link' => 'content',
     'title_class' => '',
   );
-  /* Field: Indexed Node: Email */
+  /* Field: Indexed Node: Main Email */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
@@ -450,7 +449,7 @@ function hr_contacts_views_default_views() {
   );
   $handler->display->display_options['fields']['field_phones']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_phones']['separator'] = ';';
-  /* Field: Indexed Node: Lead Agencies */
+  /* Field: Indexed Node: Organization */
   $handler->display->display_options['fields']['field_organizations']['id'] = 'field_organizations';
   $handler->display->display_options['fields']['field_organizations']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_organizations']['field'] = 'field_organizations';
@@ -523,7 +522,7 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['style_options']['provide_file'] = 0;
   $handler->display->display_options['style_options']['parent_sort'] = 0;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Indexed Node: Email */
+  /* Field: Indexed Node: Main Email */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
@@ -916,11 +915,10 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['field_location']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_location']['view_mode'] = 'full';
   $handler->display->display_options['fields']['field_location']['bypass_access'] = 0;
-  /* Field: Indexed Node: Lead Agencies */
+  /* Field: Indexed Node: Organization */
   $handler->display->display_options['fields']['field_organizations']['id'] = 'field_organizations';
   $handler->display->display_options['fields']['field_organizations']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_organizations']['field'] = 'field_organizations';
-  $handler->display->display_options['fields']['field_organizations']['label'] = 'Organization';
   $handler->display->display_options['fields']['field_organizations']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_organizations']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_organizations']['view_mode'] = 'full';
@@ -953,10 +951,11 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['field_job_title']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_job_title']['view_mode'] = 'full';
   $handler->display->display_options['fields']['field_job_title']['bypass_access'] = 0;
-  /* Field: Indexed Node: Email */
+  /* Field: Indexed Node: Main Email */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
+  $handler->display->display_options['fields']['field_email']['label'] = 'Email';
   $handler->display->display_options['fields']['field_email']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_email']['type'] = 'email_plain';
   /* Field: Indexed Node: Phones */
@@ -1259,11 +1258,10 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['footer']['area']['content'] = '<div style="text-align: center; font-size: small; font-style: italic;">Page {:pnp:} of {:ptp:}</div>';
   $handler->display->display_options['footer']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['relationships'] = FALSE;
-  /* Relationship: Indexed Node: Lead Agencies */
+  /* Relationship: Indexed Node: Organization */
   $handler->display->display_options['relationships']['field_organizations']['id'] = 'field_organizations';
   $handler->display->display_options['relationships']['field_organizations']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['relationships']['field_organizations']['field'] = 'field_organizations';
-  $handler->display->display_options['relationships']['field_organizations']['label'] = 'Organization';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_organizations_field_organization_type']['id'] = 'field_organizations_field_organization_type';
@@ -1271,7 +1269,7 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['field_organizations_field_organization_type']['field'] = 'field_organizations_field_organization_type';
   $handler->display->display_options['fields']['field_organizations_field_organization_type']['label'] = '';
   $handler->display->display_options['fields']['field_organizations_field_organization_type']['element_label_colon'] = FALSE;
-  /* Field: Indexed Node: Lead Agencies */
+  /* Field: Indexed Node: Organization */
   $handler->display->display_options['fields']['field_organizations']['id'] = 'field_organizations';
   $handler->display->display_options['fields']['field_organizations']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_organizations']['field'] = 'field_organizations';
@@ -1325,7 +1323,7 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['field_job_title']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_job_title']['view_mode'] = 'full';
   $handler->display->display_options['fields']['field_job_title']['bypass_access'] = 0;
-  /* Field: Indexed Node: Email */
+  /* Field: Indexed Node: Main Email */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
@@ -1429,7 +1427,7 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Field: Indexed Node: Lead Agencies */
+  /* Field: Indexed Node: Organization */
   $handler->display->display_options['fields']['field_organizations']['id'] = 'field_organizations';
   $handler->display->display_options['fields']['field_organizations']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_organizations']['field'] = 'field_organizations';
@@ -1496,6 +1494,21 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['menu']['weight'] = '6';
   $handler->display->display_options['menu']['context'] = 0;
   $handler->display->display_options['menu']['context_only_inline'] = 0;
+
+  /* Display: Graphs */
+  $handler = $view->new_display('page', 'Graphs', 'graphs');
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '0';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['exposed_block'] = TRUE;
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  $handler->display->display_options['path'] = 'node/%/contacts/graphs';
+  $handler->display->display_options['menu']['type'] = 'tab';
+  $handler->display->display_options['menu']['title'] = 'Graphs';
+  $handler->display->display_options['menu']['weight'] = '8';
+  $handler->display->display_options['menu']['context'] = 0;
+  $handler->display->display_options['menu']['context_only_inline'] = 0;
   $translatables['hr_contacts'] = array(
     t('Master'),
     t('more'),
@@ -1515,7 +1528,7 @@ function hr_contacts_views_default_views() {
     t('Clusters/Sectors'),
     t('First name'),
     t('Last name'),
-    t('Email'),
+    t('Main Email'),
     t('Job Title'),
     t('Organization'),
     t('Location'),
@@ -1525,7 +1538,6 @@ function hr_contacts_views_default_views() {
     t('List'),
     t('CSV'),
     t('Phones'),
-    t('Lead Agencies'),
     t('Coordination hubs'),
     t('Fundings'),
     t('Themes'),
@@ -1540,6 +1552,7 @@ function hr_contacts_views_default_views() {
 [current-date:custom:d] [current-date:custom:F] [current-date:custom:Y] - [site:og_context_current_group]
 </div>'),
     t('<div style="text-align: center; font-size: small; font-style: italic;">Page {:pnp:} of {:ptp:}</div>'),
+    t('Email'),
     t('PDF List'),
     t('[field_organizations] [field_organizations_field_acronym]'),
     t('[field_first_name] [field_last_name]'),
@@ -1548,8 +1561,404 @@ function hr_contacts_views_default_views() {
     t('Map data'),
     t('.'),
     t('Map'),
+    t('Graphs'),
   );
   $export['hr_contacts'] = $view;
+
+  $view = new view();
+  $view->name = 'hr_contacts_graphs';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'Contacts Graphs';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['group_by'] = TRUE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'visualization';
+  $handler->display->display_options['style_options']['type'] = 'bar';
+  $handler->display->display_options['style_options']['fields'] = array(
+    'nid' => array(
+      'enabled' => 1,
+      'sort' => 'DESC',
+    ),
+    'field_bundles' => array(
+      'enabled' => 0,
+    ),
+  );
+  $handler->display->display_options['style_options']['yAxis'] = array(
+    'title' => '',
+  );
+  $handler->display->display_options['style_options']['xAxis'] = array(
+    'labelField' => 'field_bundles',
+    'invert' => 0,
+  );
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Field: COUNT(DISTINCT Content: Nid) */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['group_type'] = 'count_distinct';
+  $handler->display->display_options['fields']['nid']['label'] = 'Number of contacts';
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nid']['separator'] = '';
+  /* Field: Content: Clusters/Sectors */
+  $handler->display->display_options['fields']['field_bundles']['id'] = 'field_bundles';
+  $handler->display->display_options['fields']['field_bundles']['table'] = 'og_membership';
+  $handler->display->display_options['fields']['field_bundles']['field'] = 'field_bundles';
+  $handler->display->display_options['fields']['field_bundles']['label'] = '';
+  $handler->display->display_options['fields']['field_bundles']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_bundles']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_bundles']['delta_offset'] = '0';
+  /* Sort criterion: Content: Post date */
+  $handler->display->display_options['sorts']['created']['id'] = 'created';
+  $handler->display->display_options['sorts']['created']['table'] = 'node';
+  $handler->display->display_options['sorts']['created']['field'] = 'created';
+  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Contextual filter: Content: Groups audience (og_group_ref) */
+  $handler->display->display_options['arguments']['og_group_ref_target_id']['id'] = 'og_group_ref_target_id';
+  $handler->display->display_options['arguments']['og_group_ref_target_id']['table'] = 'og_membership';
+  $handler->display->display_options['arguments']['og_group_ref_target_id']['field'] = 'og_group_ref_target_id';
+  $handler->display->display_options['arguments']['og_group_ref_target_id']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['og_group_ref_target_id']['default_argument_type'] = 'og_context';
+  $handler->display->display_options['arguments']['og_group_ref_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['og_group_ref_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['og_group_ref_target_id']['summary_options']['items_per_page'] = '25';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'hr_contact' => 'hr_contact',
+  );
+
+  /* Display: By Cluster */
+  $handler = $view->new_display('block', 'By Cluster', 'by_cluster');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Number of contacts by cluster';
+  $handler->display->display_options['block_description'] = 'Number of contacts by cluster';
+
+  /* Display: By Organization */
+  $handler = $view->new_display('block', 'By Organization', 'by_organization');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Number of contacts by organization';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'visualization';
+  $handler->display->display_options['style_options']['type'] = 'bar';
+  $handler->display->display_options['style_options']['fields'] = array(
+    'nid' => array(
+      'enabled' => 1,
+      'sort' => 'DESC',
+    ),
+    'field_organizations' => array(
+      'enabled' => 0,
+    ),
+  );
+  $handler->display->display_options['style_options']['yAxis'] = array(
+    'title' => '',
+  );
+  $handler->display->display_options['style_options']['xAxis'] = array(
+    'labelField' => 'field_organizations',
+    'invert' => 0,
+  );
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: COUNT(DISTINCT Content: Nid) */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['group_type'] = 'count_distinct';
+  $handler->display->display_options['fields']['nid']['label'] = 'Number of contacts';
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nid']['separator'] = '';
+  /* Field: Field: Organization */
+  $handler->display->display_options['fields']['field_organizations']['id'] = 'field_organizations';
+  $handler->display->display_options['fields']['field_organizations']['table'] = 'field_data_field_organizations';
+  $handler->display->display_options['fields']['field_organizations']['field'] = 'field_organizations';
+  $handler->display->display_options['fields']['field_organizations']['label'] = '';
+  $handler->display->display_options['fields']['field_organizations']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_organizations']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_organizations']['delta_offset'] = '0';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'hr_contact' => 'hr_contact',
+  );
+  /* Filter criterion: Field: Organization (field_organizations) */
+  $handler->display->display_options['filters']['field_organizations_target_id']['id'] = 'field_organizations_target_id';
+  $handler->display->display_options['filters']['field_organizations_target_id']['table'] = 'field_data_field_organizations';
+  $handler->display->display_options['filters']['field_organizations_target_id']['field'] = 'field_organizations_target_id';
+  $handler->display->display_options['filters']['field_organizations_target_id']['operator'] = 'not empty';
+  $handler->display->display_options['filters']['field_organizations_target_id']['shs_enabled'] = 0;
+  $handler->display->display_options['block_description'] = 'Number of contacts by organization';
+
+  /* Display: By Coordination Hub */
+  $handler = $view->new_display('block', 'By Coordination Hub', 'by_coordination_hub');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Number of contacts by coordination hub';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'visualization';
+  $handler->display->display_options['style_options']['type'] = 'bar';
+  $handler->display->display_options['style_options']['fields'] = array(
+    'nid' => array(
+      'enabled' => 1,
+      'sort' => 'DESC',
+    ),
+    'field_coordination_hubs' => array(
+      'enabled' => 0,
+    ),
+  );
+  $handler->display->display_options['style_options']['yAxis'] = array(
+    'title' => '',
+  );
+  $handler->display->display_options['style_options']['xAxis'] = array(
+    'labelField' => 'field_coordination_hubs',
+    'invert' => 0,
+  );
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: COUNT(DISTINCT Content: Nid) */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['group_type'] = 'count_distinct';
+  $handler->display->display_options['fields']['nid']['label'] = 'Number of contacts';
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nid']['separator'] = '';
+  /* Field: Content: Coordination hubs */
+  $handler->display->display_options['fields']['field_coordination_hubs']['id'] = 'field_coordination_hubs';
+  $handler->display->display_options['fields']['field_coordination_hubs']['table'] = 'field_data_field_coordination_hubs';
+  $handler->display->display_options['fields']['field_coordination_hubs']['field'] = 'field_coordination_hubs';
+  $handler->display->display_options['fields']['field_coordination_hubs']['label'] = '';
+  $handler->display->display_options['fields']['field_coordination_hubs']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_coordination_hubs']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['fields']['field_coordination_hubs']['delta_offset'] = '0';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'hr_contact' => 'hr_contact',
+  );
+  /* Filter criterion: Content: Coordination hubs (field_coordination_hubs) */
+  $handler->display->display_options['filters']['field_coordination_hubs_target_id']['id'] = 'field_coordination_hubs_target_id';
+  $handler->display->display_options['filters']['field_coordination_hubs_target_id']['table'] = 'field_data_field_coordination_hubs';
+  $handler->display->display_options['filters']['field_coordination_hubs_target_id']['field'] = 'field_coordination_hubs_target_id';
+  $handler->display->display_options['filters']['field_coordination_hubs_target_id']['operator'] = 'not empty';
+  $handler->display->display_options['block_description'] = 'Number of contacts by coordination hub';
+
+  /* Display: By Location */
+  $handler = $view->new_display('block', 'By Location', 'by_location');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Number of contacts by location';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'visualization';
+  $handler->display->display_options['style_options']['type'] = 'bar';
+  $handler->display->display_options['style_options']['fields'] = array(
+    'nid' => array(
+      'enabled' => 1,
+      'sort' => 'DESC',
+    ),
+    'field_location' => array(
+      'enabled' => 0,
+      'sort' => '0',
+    ),
+  );
+  $handler->display->display_options['style_options']['yAxis'] = array(
+    'title' => '',
+  );
+  $handler->display->display_options['style_options']['xAxis'] = array(
+    'labelField' => 'field_location',
+    'invert' => 0,
+  );
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: COUNT(DISTINCT Content: Nid) */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['group_type'] = 'count_distinct';
+  $handler->display->display_options['fields']['nid']['label'] = 'Number of contacts';
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nid']['separator'] = '';
+  /* Field: Field: Location */
+  $handler->display->display_options['fields']['field_location']['id'] = 'field_location';
+  $handler->display->display_options['fields']['field_location']['table'] = 'field_data_field_location';
+  $handler->display->display_options['fields']['field_location']['field'] = 'field_location';
+  $handler->display->display_options['fields']['field_location']['label'] = '';
+  $handler->display->display_options['fields']['field_location']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_location']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'hr_contact' => 'hr_contact',
+  );
+  /* Filter criterion: Field: Location (field_location) */
+  $handler->display->display_options['filters']['field_location_target_id']['id'] = 'field_location_target_id';
+  $handler->display->display_options['filters']['field_location_target_id']['table'] = 'field_data_field_location';
+  $handler->display->display_options['filters']['field_location_target_id']['field'] = 'field_location_target_id';
+  $handler->display->display_options['filters']['field_location_target_id']['operator'] = 'not empty';
+  $handler->display->display_options['filters']['field_location_target_id']['shs_enabled'] = 0;
+  $handler->display->display_options['block_description'] = 'Number of contacts by location';
+
+  /* Display: Organizations by Type */
+  $handler = $view->new_display('block', 'Organizations by Type', 'organizations_by_type');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Number of organizations by type';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'visualization';
+  $handler->display->display_options['style_options']['type'] = 'bar';
+  $handler->display->display_options['style_options']['fields'] = array(
+    'field_organizations' => array(
+      'enabled' => 1,
+      'sort' => 'DESC',
+    ),
+    'field_organization_type' => array(
+      'enabled' => 0,
+      'sort' => '0',
+    ),
+  );
+  $handler->display->display_options['style_options']['yAxis'] = array(
+    'title' => '',
+  );
+  $handler->display->display_options['style_options']['xAxis'] = array(
+    'labelField' => 'field_organization_type',
+    'invert' => 0,
+  );
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_organizations_target_id']['id'] = 'field_organizations_target_id';
+  $handler->display->display_options['relationships']['field_organizations_target_id']['table'] = 'field_data_field_organizations';
+  $handler->display->display_options['relationships']['field_organizations_target_id']['field'] = 'field_organizations_target_id';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: COUNT(DISTINCT Field: Organization) */
+  $handler->display->display_options['fields']['field_organizations']['id'] = 'field_organizations';
+  $handler->display->display_options['fields']['field_organizations']['table'] = 'field_data_field_organizations';
+  $handler->display->display_options['fields']['field_organizations']['field'] = 'field_organizations';
+  $handler->display->display_options['fields']['field_organizations']['group_type'] = 'count_distinct';
+  $handler->display->display_options['fields']['field_organizations']['label'] = '';
+  $handler->display->display_options['fields']['field_organizations']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_organizations']['separator'] = ', ';
+  /* Field: Taxonomy term: Type */
+  $handler->display->display_options['fields']['field_organization_type']['id'] = 'field_organization_type';
+  $handler->display->display_options['fields']['field_organization_type']['table'] = 'field_data_field_organization_type';
+  $handler->display->display_options['fields']['field_organization_type']['field'] = 'field_organization_type';
+  $handler->display->display_options['fields']['field_organization_type']['relationship'] = 'field_organizations_target_id';
+  $handler->display->display_options['fields']['field_organization_type']['label'] = '';
+  $handler->display->display_options['fields']['field_organization_type']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_organization_type']['settings'] = array(
+    'link' => 0,
+  );
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'hr_contact' => 'hr_contact',
+  );
+  $handler->display->display_options['block_description'] = 'Number of organizations by type';
+  $translatables['hr_contacts_graphs'] = array(
+    t('Master'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Number of contacts'),
+    t('All'),
+    t('By Cluster'),
+    t('Number of contacts by cluster'),
+    t('By Organization'),
+    t('Number of contacts by organization'),
+    t('By Coordination Hub'),
+    t('Number of contacts by coordination hub'),
+    t('By Location'),
+    t('Number of contacts by location'),
+    t('Organizations by Type'),
+    t('Number of organizations by type'),
+    t('Taxonomy term entity referenced from field_organizations'),
+  );
+  $export['hr_contacts_graphs'] = $view;
 
   $view = new view();
   $view->name = 'hr_contacts_panes';
