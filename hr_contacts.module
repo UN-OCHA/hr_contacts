@@ -182,7 +182,7 @@ function hr_contacts_entity_info_alter(&$entity_info) {
  * Implements hook_og_membership_insert()
  * Creates a check-in message when someones checks into an operation
  */
-function hr_contacts_og_membership_insert(OgMembership $og_membership) {
+/*function hr_contacts_og_membership_insert(OgMembership $og_membership) {
   global $user;
   if ($og_membership->type == 'hr_responder') {
     // Someone is checking in
@@ -195,4 +195,4 @@ function hr_contacts_og_membership_insert(OgMembership $og_membership) {
     $wrapper->field_node_ref->set($node);
     $wrapper->save();
   }
-}
+}*/
