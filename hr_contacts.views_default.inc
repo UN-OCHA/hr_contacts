@@ -69,7 +69,7 @@ function hr_contacts_views_default_views() {
     'title_link' => 'content',
     'title_class' => '',
   );
-  /* Field: Indexed Node: Main Email */
+  /* Field: Indexed Node: Email */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
@@ -297,7 +297,7 @@ function hr_contacts_views_default_views() {
     'title_link' => 'content',
     'title_class' => '',
   );
-  /* Field: Indexed Node: Main Email */
+  /* Field: Indexed Node: Email */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
@@ -425,7 +425,7 @@ function hr_contacts_views_default_views() {
     'title_link' => 'content',
     'title_class' => '',
   );
-  /* Field: Indexed Node: Main Email */
+  /* Field: Indexed Node: Email */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
@@ -522,7 +522,7 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['style_options']['provide_file'] = 0;
   $handler->display->display_options['style_options']['parent_sort'] = 0;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Indexed Node: Main Email */
+  /* Field: Indexed Node: Email */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
@@ -951,11 +951,10 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['field_job_title']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_job_title']['view_mode'] = 'full';
   $handler->display->display_options['fields']['field_job_title']['bypass_access'] = 0;
-  /* Field: Indexed Node: Main Email */
+  /* Field: Indexed Node: Email */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
-  $handler->display->display_options['fields']['field_email']['label'] = 'Email';
   $handler->display->display_options['fields']['field_email']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_email']['type'] = 'email_plain';
   /* Field: Indexed Node: Phones */
@@ -1323,7 +1322,7 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['field_job_title']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_job_title']['view_mode'] = 'full';
   $handler->display->display_options['fields']['field_job_title']['bypass_access'] = 0;
-  /* Field: Indexed Node: Main Email */
+  /* Field: Indexed Node: Email */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
@@ -1528,7 +1527,7 @@ function hr_contacts_views_default_views() {
     t('Clusters/Sectors'),
     t('First name'),
     t('Last name'),
-    t('Main Email'),
+    t('Email'),
     t('Job Title'),
     t('Organization'),
     t('Location'),
@@ -1552,7 +1551,6 @@ function hr_contacts_views_default_views() {
 [current-date:custom:d] [current-date:custom:F] [current-date:custom:Y] - [site:og_context_current_group]
 </div>'),
     t('<div style="text-align: center; font-size: small; font-style: italic;">Page {:pnp:} of {:ptp:}</div>'),
-    t('Email'),
     t('PDF List'),
     t('[field_organizations] [field_organizations_field_acronym]'),
     t('[field_first_name] [field_last_name]'),
