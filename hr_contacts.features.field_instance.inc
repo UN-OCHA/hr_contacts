@@ -770,6 +770,56 @@ function hr_contacts_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-hr_contact-field_opt_out'
+  $field_instances['node-hr_contact-field_opt_out'] = array(
+    'bundle' => 'hr_contact',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 19,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_opt_out',
+    'label' => 'Exclude name and details from the Humanitarian Contact List',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 19,
+    ),
+  );
+
   // Exported field_instance: 'node-hr_contact-field_organizations'
   $field_instances['node-hr_contact-field_organizations'] = array(
     'bundle' => 'hr_contact',
@@ -1478,7 +1528,7 @@ function hr_contacts_field_default_field_instances() {
       'module' => 'og',
       'settings' => array(),
       'type' => 'og_complex',
-      'weight' => 19,
+      'weight' => 20,
     ),
   );
 
@@ -1599,9 +1649,9 @@ function hr_contacts_field_default_field_instances() {
   t('Contacts');
   t('Coordination hubs');
   t('Emergencies');
+  t('Exclude name and details from the Humanitarian Contact List');
   t('First name');
   t('Funding methods');
-  t('Groups audience');
   t('If you selected "Other" in the above field, please enter your Job Title here');
   t('If you selected "Other" in the above field, please enter your organization name here.');
   t('Job Title');
@@ -1617,6 +1667,7 @@ function hr_contacts_field_default_field_instances() {
   t('Responder in');
   t('Skype ID');
   t('Social media');
+  t('Space(s)');
   t('The locations you cover');
   t('Themes');
   t('Title');
