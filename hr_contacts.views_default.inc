@@ -101,6 +101,14 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['field_location']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_location']['view_mode'] = 'full';
   $handler->display->display_options['fields']['field_location']['bypass_access'] = 0;
+  /* Sort criterion: Indexed Node: Last name */
+  $handler->display->display_options['sorts']['field_last_name']['id'] = 'field_last_name';
+  $handler->display->display_options['sorts']['field_last_name']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['sorts']['field_last_name']['field'] = 'field_last_name';
+  /* Sort criterion: Indexed Node: First name */
+  $handler->display->display_options['sorts']['field_first_name']['id'] = 'field_first_name';
+  $handler->display->display_options['sorts']['field_first_name']['table'] = 'search_api_index_default_node_index';
+  $handler->display->display_options['sorts']['field_first_name']['field'] = 'field_first_name';
   /* Contextual filter: Indexed Node: Space(s) */
   $handler->display->display_options['arguments']['og_group_ref']['id'] = 'og_group_ref';
   $handler->display->display_options['arguments']['og_group_ref']['table'] = 'search_api_index_default_node_index';
