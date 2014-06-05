@@ -54,7 +54,7 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['field_first_name']['id'] = 'field_first_name';
   $handler->display->display_options['fields']['field_first_name']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_first_name']['field'] = 'field_first_name';
-  $handler->display->display_options['fields']['field_bundles']['label'] = 'First name';
+  $handler->display->display_options['fields']['field_first_name']['label'] = 'First name';
   $handler->display->display_options['fields']['field_first_name']['type'] = 'title_linked';
   $handler->display->display_options['fields']['field_first_name']['settings'] = array(
     'title_style' => '_none',
