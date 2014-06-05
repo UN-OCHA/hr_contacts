@@ -46,6 +46,7 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['field_bundles']['id'] = 'field_bundles';
   $handler->display->display_options['fields']['field_bundles']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_bundles']['field'] = 'field_bundles';
+  $handler->display->display_options['fields']['field_bundles']['label'] = 'Clusters';
   $handler->display->display_options['fields']['field_bundles']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_bundles']['view_mode'] = 'full';
   $handler->display->display_options['fields']['field_bundles']['bypass_access'] = 0;
@@ -53,6 +54,7 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['field_first_name']['id'] = 'field_first_name';
   $handler->display->display_options['fields']['field_first_name']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_first_name']['field'] = 'field_first_name';
+  $handler->display->display_options['fields']['field_bundles']['label'] = 'First name';
   $handler->display->display_options['fields']['field_first_name']['type'] = 'title_linked';
   $handler->display->display_options['fields']['field_first_name']['settings'] = array(
     'title_style' => '_none',
@@ -63,27 +65,31 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['field_last_name']['id'] = 'field_last_name';
   $handler->display->display_options['fields']['field_last_name']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_last_name']['field'] = 'field_last_name';
+  $handler->display->display_options['fields']['field_last_name']['label'] = 'Last name';
   $handler->display->display_options['fields']['field_last_name']['type'] = 'title_linked';
   $handler->display->display_options['fields']['field_last_name']['settings'] = array(
     'title_style' => '_none',
     'title_link' => 'content',
     'title_class' => '',
   );
-  /* Field: Indexed Node: Main Email */
+  /* Field: Indexed Node: Email */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
+  $handler->display->display_options['fields']['field_email']['label'] = 'Email';
   /* Field: Indexed Node: Job Title */
   $handler->display->display_options['fields']['field_job_title']['id'] = 'field_job_title';
   $handler->display->display_options['fields']['field_job_title']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_job_title']['field'] = 'field_job_title';
+  $handler->display->display_options['fields']['field_job_title']['label'] = 'Job Title';
   $handler->display->display_options['fields']['field_job_title']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_job_title']['view_mode'] = 'full';
   $handler->display->display_options['fields']['field_job_title']['bypass_access'] = 0;
-  /* Field: Indexed Node: Organization */
+  /* Field: Indexed Node: Organizations */
   $handler->display->display_options['fields']['field_organizations']['id'] = 'field_organizations';
   $handler->display->display_options['fields']['field_organizations']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_organizations']['field'] = 'field_organizations';
+  $handler->display->display_options['fields']['field_organizations']['label'] = 'Organization';
   $handler->display->display_options['fields']['field_organizations']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_organizations']['view_mode'] = 'full';
   $handler->display->display_options['fields']['field_organizations']['bypass_access'] = 0;
@@ -91,6 +97,7 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['field_location']['id'] = 'field_location';
   $handler->display->display_options['fields']['field_location']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_location']['field'] = 'field_location';
+  $handler->display->display_options['fields']['field_location']['label'] = 'Location';
   $handler->display->display_options['fields']['field_location']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_location']['view_mode'] = 'full';
   $handler->display->display_options['fields']['field_location']['bypass_access'] = 0;
@@ -280,6 +287,7 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['field_bundles']['id'] = 'field_bundles';
   $handler->display->display_options['fields']['field_bundles']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_bundles']['field'] = 'field_bundles';
+  $handler->display->display_options['fields']['field_bundles']['label'] = 'Clusters';
   $handler->display->display_options['fields']['field_bundles']['list']['separator'] = ';';
   $handler->display->display_options['fields']['field_bundles']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_bundles']['view_mode'] = 'full';
@@ -288,6 +296,7 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['field_first_name']['id'] = 'field_first_name';
   $handler->display->display_options['fields']['field_first_name']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_first_name']['field'] = 'field_first_name';
+  $handler->display->display_options['fields']['field_first_name']['label'] = 'First name';
   $handler->display->display_options['fields']['field_first_name']['type'] = 'title_linked';
   $handler->display->display_options['fields']['field_first_name']['settings'] = array(
     'title_style' => '_none',
@@ -298,20 +307,23 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['field_last_name']['id'] = 'field_last_name';
   $handler->display->display_options['fields']['field_last_name']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_last_name']['field'] = 'field_last_name';
+  $handler->display->display_options['fields']['field_last_name']['label'] = 'Last name';
   $handler->display->display_options['fields']['field_last_name']['type'] = 'title_linked';
   $handler->display->display_options['fields']['field_last_name']['settings'] = array(
     'title_style' => '_none',
     'title_link' => 'content',
     'title_class' => '',
   );
-  /* Field: Indexed Node: Main Email */
+  /* Field: Indexed Node: Email */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
+  $handler->display->display_options['fields']['field_email']['label'] = 'Email';
   /* Field: Indexed Node: Phones */
   $handler->display->display_options['fields']['field_phones']['id'] = 'field_phones';
   $handler->display->display_options['fields']['field_phones']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_phones']['field'] = 'field_phones';
+  $handler->display->display_options['fields']['field_phones']['label'] = 'Phones';
   $handler->display->display_options['fields']['field_phones']['click_sort_column'] = 'numbertype';
   $handler->display->display_options['fields']['field_phones']['settings'] = array(
     'components' => array(
@@ -327,10 +339,11 @@ function hr_contacts_views_default_views() {
   );
   $handler->display->display_options['fields']['field_phones']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_phones']['separator'] = ';';
-  /* Field: Indexed Node: Organization */
+  /* Field: Indexed Node: Organizations */
   $handler->display->display_options['fields']['field_organizations']['id'] = 'field_organizations';
   $handler->display->display_options['fields']['field_organizations']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_organizations']['field'] = 'field_organizations';
+  $handler->display->display_options['fields']['field_organizations']['label'] = 'Organization';
   $handler->display->display_options['fields']['field_organizations']['list']['separator'] = ';';
   $handler->display->display_options['fields']['field_organizations']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_organizations']['view_mode'] = 'full';
@@ -339,6 +352,7 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['field_job_title']['id'] = 'field_job_title';
   $handler->display->display_options['fields']['field_job_title']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_job_title']['field'] = 'field_job_title';
+  $handler->display->display_options['fields']['field_job_title']['label'] = 'Job title';
   $handler->display->display_options['fields']['field_job_title']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_job_title']['view_mode'] = 'full';
   $handler->display->display_options['fields']['field_job_title']['bypass_access'] = 0;
@@ -346,6 +360,7 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['field_location']['id'] = 'field_location';
   $handler->display->display_options['fields']['field_location']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_location']['field'] = 'field_location';
+  $handler->display->display_options['fields']['field_location']['label'] = 'Location';
   $handler->display->display_options['fields']['field_location']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_location']['view_mode'] = 'full';
   $handler->display->display_options['fields']['field_location']['bypass_access'] = 0;
@@ -353,6 +368,7 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['field_coordination_hubs']['id'] = 'field_coordination_hubs';
   $handler->display->display_options['fields']['field_coordination_hubs']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_coordination_hubs']['field'] = 'field_coordination_hubs';
+  $handler->display->display_options['fields']['field_coordination_hubs']['label'] = 'Coordination hubs';
   $handler->display->display_options['fields']['field_coordination_hubs']['list']['separator'] = ';';
   $handler->display->display_options['fields']['field_coordination_hubs']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_coordination_hubs']['view_mode'] = 'full';
@@ -370,6 +386,7 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['field_themes']['id'] = 'field_themes';
   $handler->display->display_options['fields']['field_themes']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_themes']['field'] = 'field_themes';
+  $handler->display->display_options['fields']['field_themes']['label'] = 'Themes';
   $handler->display->display_options['fields']['field_themes']['list']['separator'] = ';';
   $handler->display->display_options['fields']['field_themes']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_themes']['view_mode'] = 'full';
@@ -378,6 +395,7 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['field_disasters']['id'] = 'field_disasters';
   $handler->display->display_options['fields']['field_disasters']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_disasters']['field'] = 'field_disasters';
+  $handler->display->display_options['fields']['field_disasters']['label'] = 'Disasters';
   $handler->display->display_options['fields']['field_disasters']['list']['separator'] = ';';
   $handler->display->display_options['fields']['field_disasters']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_disasters']['view_mode'] = 'full';
@@ -432,10 +450,11 @@ function hr_contacts_views_default_views() {
     'title_link' => 'content',
     'title_class' => '',
   );
-  /* Field: Indexed Node: Main Email */
+  /* Field: Indexed Node: Email */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
+  $handler->display->display_options['fields']['field_email']['label'] = 'Email';
   $handler->display->display_options['fields']['field_email']['type'] = 'email_plain';
   /* Field: Indexed Node: Phones */
   $handler->display->display_options['fields']['field_phones']['id'] = 'field_phones';
@@ -456,10 +475,11 @@ function hr_contacts_views_default_views() {
   );
   $handler->display->display_options['fields']['field_phones']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_phones']['separator'] = ';';
-  /* Field: Indexed Node: Organization */
+  /* Field: Indexed Node: Organizations */
   $handler->display->display_options['fields']['field_organizations']['id'] = 'field_organizations';
   $handler->display->display_options['fields']['field_organizations']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_organizations']['field'] = 'field_organizations';
+  $handler->display->display_options['fields']['field_organizations']['label'] = 'Organization';
   $handler->display->display_options['fields']['field_organizations']['list']['separator'] = ';';
   $handler->display->display_options['fields']['field_organizations']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_organizations']['view_mode'] = 'full';
@@ -475,6 +495,7 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['field_location']['id'] = 'field_location';
   $handler->display->display_options['fields']['field_location']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_location']['field'] = 'field_location';
+  $handler->display->display_options['fields']['field_location']['label'] = 'Location';
   $handler->display->display_options['fields']['field_location']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_location']['view_mode'] = 'full';
   $handler->display->display_options['fields']['field_location']['bypass_access'] = 0;
@@ -529,7 +550,7 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['style_options']['provide_file'] = 0;
   $handler->display->display_options['style_options']['parent_sort'] = 0;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Indexed Node: Main Email */
+  /* Field: Indexed Node: Email */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
@@ -922,10 +943,11 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['field_location']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_location']['view_mode'] = 'full';
   $handler->display->display_options['fields']['field_location']['bypass_access'] = 0;
-  /* Field: Indexed Node: Organization */
+  /* Field: Indexed Node: Organizations */
   $handler->display->display_options['fields']['field_organizations']['id'] = 'field_organizations';
   $handler->display->display_options['fields']['field_organizations']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_organizations']['field'] = 'field_organizations';
+  $handler->display->display_options['fields']['field_organizations']['label'] = 'Organization';
   $handler->display->display_options['fields']['field_organizations']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_organizations']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_organizations']['view_mode'] = 'full';
@@ -958,11 +980,10 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['field_job_title']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_job_title']['view_mode'] = 'full';
   $handler->display->display_options['fields']['field_job_title']['bypass_access'] = 0;
-  /* Field: Indexed Node: Main Email */
+  /* Field: Indexed Node: Email */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
-  $handler->display->display_options['fields']['field_email']['label'] = 'Email';
   $handler->display->display_options['fields']['field_email']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_email']['type'] = 'email_plain';
   /* Field: Indexed Node: Phones */
@@ -1265,10 +1286,11 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['footer']['area']['content'] = '<div style="text-align: center; font-size: small; font-style: italic;">Page {:pnp:} of {:ptp:}</div>';
   $handler->display->display_options['footer']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['relationships'] = FALSE;
-  /* Relationship: Indexed Node: Organization */
+  /* Relationship: Indexed Node: Organizations */
   $handler->display->display_options['relationships']['field_organizations']['id'] = 'field_organizations';
   $handler->display->display_options['relationships']['field_organizations']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['relationships']['field_organizations']['field'] = 'field_organizations';
+  $handler->display->display_options['relationships']['field_organizations']['label'] = 'Organization';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_organizations_field_organization_type']['id'] = 'field_organizations_field_organization_type';
@@ -1276,7 +1298,7 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['field_organizations_field_organization_type']['field'] = 'field_organizations_field_organization_type';
   $handler->display->display_options['fields']['field_organizations_field_organization_type']['label'] = '';
   $handler->display->display_options['fields']['field_organizations_field_organization_type']['element_label_colon'] = FALSE;
-  /* Field: Indexed Node: Organization */
+  /* Field: Indexed Node: Organizations */
   $handler->display->display_options['fields']['field_organizations']['id'] = 'field_organizations';
   $handler->display->display_options['fields']['field_organizations']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_organizations']['field'] = 'field_organizations';
@@ -1330,7 +1352,7 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['field_job_title']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_job_title']['view_mode'] = 'full';
   $handler->display->display_options['fields']['field_job_title']['bypass_access'] = 0;
-  /* Field: Indexed Node: Main Email */
+  /* Field: Indexed Node: Email */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
@@ -1434,7 +1456,7 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Field: Indexed Node: Organization */
+  /* Field: Indexed Node: Organizations */
   $handler->display->display_options['fields']['field_organizations']['id'] = 'field_organizations';
   $handler->display->display_options['fields']['field_organizations']['table'] = 'search_api_index_default_node_index';
   $handler->display->display_options['fields']['field_organizations']['field'] = 'field_organizations';
@@ -1532,10 +1554,10 @@ function hr_contacts_views_default_views() {
     t('next ›'),
     t('last »'),
     t('There are no results'),
-    t('Clusters/Sectors'),
+    t('Clusters'),
     t('First name'),
     t('Last name'),
-    t('Main Email'),
+    t('Email'),
     t('Job Title'),
     t('Organization'),
     t('Location'),
@@ -1544,13 +1566,14 @@ function hr_contacts_views_default_views() {
     t('Table'),
     t('List'),
     t('CSV'),
+    t('Clusters/Sectors'),
     t('Phones'),
+    t('Organizations'),
     t('Coordination hubs'),
     t('Fundings'),
     t('Themes'),
     t('Emergencies'),
     t('XML'),
-    t('Clusters'),
     t('EMAILS'),
     t('PDF'),
     t('<div></div>
@@ -1559,7 +1582,6 @@ function hr_contacts_views_default_views() {
 [current-date:custom:d] [current-date:custom:F] [current-date:custom:Y] - [site:og_context_current_group]
 </div>'),
     t('<div style="text-align: center; font-size: small; font-style: italic;">Page {:pnp:} of {:ptp:}</div>'),
-    t('Email'),
     t('PDF List'),
     t('[field_organizations] [field_organizations_field_acronym]'),
     t('[field_first_name] [field_last_name]'),
@@ -1635,7 +1657,7 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Contextual filter: Content: Groups audience (og_group_ref) */
+  /* Contextual filter: Content: Space(s) (og_group_ref) */
   $handler->display->display_options['arguments']['og_group_ref_target_id']['id'] = 'og_group_ref_target_id';
   $handler->display->display_options['arguments']['og_group_ref_target_id']['table'] = 'og_membership';
   $handler->display->display_options['arguments']['og_group_ref_target_id']['field'] = 'og_group_ref_target_id';
@@ -2010,7 +2032,7 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['sorts']['title_field_value']['field'] = 'title_field_value';
   $handler->display->display_options['sorts']['title_field_value']['exposed'] = TRUE;
   $handler->display->display_options['sorts']['title_field_value']['expose']['label'] = 'Name';
-  /* Contextual filter: Content: Groups audience (og_group_ref) */
+  /* Contextual filter: Content: Space(s) (og_group_ref) */
   $handler->display->display_options['arguments']['og_group_ref_target_id']['id'] = 'og_group_ref_target_id';
   $handler->display->display_options['arguments']['og_group_ref_target_id']['table'] = 'og_membership';
   $handler->display->display_options['arguments']['og_group_ref_target_id']['field'] = 'og_group_ref_target_id';
@@ -2082,7 +2104,7 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'entityreference_fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Groups audience */
+  /* Field: Content: Space(s) */
   $handler->display->display_options['fields']['og_group_ref']['id'] = 'og_group_ref';
   $handler->display->display_options['fields']['og_group_ref']['table'] = 'og_membership';
   $handler->display->display_options['fields']['og_group_ref']['field'] = 'og_group_ref';
