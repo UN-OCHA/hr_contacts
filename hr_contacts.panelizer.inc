@@ -841,5 +841,202 @@ function hr_contacts_panelizer_defaults() {
   $panelizer->display = $display;
   $export['node:hr_contact:default:search_result'] = $panelizer;
 
+  $panelizer = new stdClass();
+  $panelizer->disabled = FALSE; /* Edit this to true to make a default panelizer disabled initially */
+  $panelizer->api_version = 1;
+  $panelizer->name = 'node:hr_contact:default:teaser';
+  $panelizer->title = 'Default';
+  $panelizer->panelizer_type = 'node';
+  $panelizer->panelizer_key = 'hr_contact';
+  $panelizer->no_blocks = FALSE;
+  $panelizer->css_id = '';
+  $panelizer->css = '';
+  $panelizer->pipeline = 'standard';
+  $panelizer->contexts = array();
+  $panelizer->relationships = array();
+  $panelizer->access = array();
+  $panelizer->view_mode = 'teaser';
+  $panelizer->css_class = '';
+  $panelizer->title_element = 'H2';
+  $panelizer->link_to_entity = TRUE;
+  $panelizer->extra = array();
+  $display = new panels_display();
+  $display->layout = 'radix_boxton';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'contentmain' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '%node:title';
+  $display->uuid = '16eae616-2be6-4e82-9af6-91e7432746dd';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-79e27476-3380-4183-8876-ca8727f124d6';
+    $pane->panel = 'contentmain';
+    $pane->type = 'node_title';
+    $pane->subtype = 'node_title';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'link' => 1,
+      'markup' => 'none',
+      'id' => '',
+      'class' => '',
+      'context' => 'panelizer',
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '79e27476-3380-4183-8876-ca8727f124d6';
+    $display->content['new-79e27476-3380-4183-8876-ca8727f124d6'] = $pane;
+    $display->panels['contentmain'][0] = 'new-79e27476-3380-4183-8876-ca8727f124d6';
+    $pane = new stdClass();
+    $pane->pid = 'new-4bdfaf12-3ac9-4361-b29e-ffa44a7508e1';
+    $pane->panel = 'contentmain';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:field_organizations';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'entityreference_label',
+      'delta_limit' => '0',
+      'delta_offset' => '0',
+      'delta_reversed' => 0,
+      'formatter_settings' => array(
+        'link' => 0,
+      ),
+      'context' => 'panelizer',
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '4bdfaf12-3ac9-4361-b29e-ffa44a7508e1';
+    $display->content['new-4bdfaf12-3ac9-4361-b29e-ffa44a7508e1'] = $pane;
+    $display->panels['contentmain'][1] = 'new-4bdfaf12-3ac9-4361-b29e-ffa44a7508e1';
+    $pane = new stdClass();
+    $pane->pid = 'new-800e72f5-2bcb-4b7d-8c04-34b9b83fb041';
+    $pane->panel = 'contentmain';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:field_job_title';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'entityreference_label',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(
+        'link' => 0,
+      ),
+      'context' => 'panelizer',
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = array();
+    $pane->uuid = '800e72f5-2bcb-4b7d-8c04-34b9b83fb041';
+    $display->content['new-800e72f5-2bcb-4b7d-8c04-34b9b83fb041'] = $pane;
+    $display->panels['contentmain'][2] = 'new-800e72f5-2bcb-4b7d-8c04-34b9b83fb041';
+    $pane = new stdClass();
+    $pane->pid = 'new-9e9bea8c-7abe-46f7-972f-291d9075c923';
+    $pane->panel = 'contentmain';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:field_email';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'email_default',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(),
+      'context' => 'panelizer',
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 3;
+    $pane->locks = array();
+    $pane->uuid = '9e9bea8c-7abe-46f7-972f-291d9075c923';
+    $display->content['new-9e9bea8c-7abe-46f7-972f-291d9075c923'] = $pane;
+    $display->panels['contentmain'][3] = 'new-9e9bea8c-7abe-46f7-972f-291d9075c923';
+    $pane = new stdClass();
+    $pane->pid = 'new-3185edb9-1471-471e-bfef-1224eca30586';
+    $pane->panel = 'contentmain';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:field_phones';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'phone_international',
+      'delta_limit' => '0',
+      'delta_offset' => '0',
+      'delta_reversed' => 0,
+      'formatter_settings' => array(
+        'allow_alpha' => 0,
+        'as_tel_link' => 0,
+        'components' => array(
+          'numbertype' => 'numbertype',
+          'country' => 0,
+        ),
+        'country_name_position' => 'after',
+        'extension_prefix' => ' ext. ',
+        'full_hcard' => 0,
+        'numbertype_position' => 'before',
+        'raw' => 0,
+      ),
+      'context' => 'panelizer',
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 4;
+    $pane->locks = array();
+    $pane->uuid = '3185edb9-1471-471e-bfef-1224eca30586';
+    $display->content['new-3185edb9-1471-471e-bfef-1224eca30586'] = $pane;
+    $display->panels['contentmain'][4] = 'new-3185edb9-1471-471e-bfef-1224eca30586';
+  $display->hide_title = PANELS_TITLE_NONE;
+  $display->title_pane = '0';
+  $panelizer->display = $display;
+  $export['node:hr_contact:default:teaser'] = $panelizer;
+
   return $export;
 }
