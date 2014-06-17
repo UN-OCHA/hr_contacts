@@ -373,37 +373,6 @@ function hr_contacts_panelizer_defaults() {
     $display->content['new-61d4323b-33c8-46ed-bf5b-ea7a9b9e0676'] = $pane;
     $display->panels['sidebar'][3] = 'new-61d4323b-33c8-46ed-bf5b-ea7a9b9e0676';
     $pane = new stdClass();
-    $pane->pid = 'new-d1610593-87b1-4e07-bd78-50f2cf6d208a';
-    $pane->panel = 'sidebar';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_job_title';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'above',
-      'formatter' => 'entityreference_label',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(
-        'link' => 0,
-      ),
-      'context' => 'panelizer',
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 4;
-    $pane->locks = array();
-    $pane->uuid = 'd1610593-87b1-4e07-bd78-50f2cf6d208a';
-    $display->content['new-d1610593-87b1-4e07-bd78-50f2cf6d208a'] = $pane;
-    $display->panels['sidebar'][4] = 'new-d1610593-87b1-4e07-bd78-50f2cf6d208a';
-    $pane = new stdClass();
     $pane->pid = 'new-a98947b7-d0be-4f8b-9379-2e45d4aa6f31';
     $pane->panel = 'sidebar';
     $pane->type = 'entity_field';
@@ -427,11 +396,11 @@ function hr_contacts_panelizer_defaults() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 5;
+    $pane->position = 4;
     $pane->locks = array();
     $pane->uuid = 'a98947b7-d0be-4f8b-9379-2e45d4aa6f31';
     $display->content['new-a98947b7-d0be-4f8b-9379-2e45d4aa6f31'] = $pane;
-    $display->panels['sidebar'][5] = 'new-a98947b7-d0be-4f8b-9379-2e45d4aa6f31';
+    $display->panels['sidebar'][4] = 'new-a98947b7-d0be-4f8b-9379-2e45d4aa6f31';
     $pane = new stdClass();
     $pane->pid = 'new-9b3a5522-4d0b-4aea-854a-82fb74692078';
     $pane->panel = 'sidebar';
@@ -458,11 +427,11 @@ function hr_contacts_panelizer_defaults() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 6;
+    $pane->position = 5;
     $pane->locks = array();
     $pane->uuid = '9b3a5522-4d0b-4aea-854a-82fb74692078';
     $display->content['new-9b3a5522-4d0b-4aea-854a-82fb74692078'] = $pane;
-    $display->panels['sidebar'][6] = 'new-9b3a5522-4d0b-4aea-854a-82fb74692078';
+    $display->panels['sidebar'][5] = 'new-9b3a5522-4d0b-4aea-854a-82fb74692078';
     $pane = new stdClass();
     $pane->pid = 'new-bc38529f-9dfe-4d80-a538-cc43605636b6';
     $pane->panel = 'sidebar';
@@ -489,11 +458,11 @@ function hr_contacts_panelizer_defaults() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 7;
+    $pane->position = 6;
     $pane->locks = array();
     $pane->uuid = 'bc38529f-9dfe-4d80-a538-cc43605636b6';
     $display->content['new-bc38529f-9dfe-4d80-a538-cc43605636b6'] = $pane;
-    $display->panels['sidebar'][7] = 'new-bc38529f-9dfe-4d80-a538-cc43605636b6';
+    $display->panels['sidebar'][6] = 'new-bc38529f-9dfe-4d80-a538-cc43605636b6';
     $pane = new stdClass();
     $pane->pid = 'new-9ce8d6b2-21ce-4eef-8b6a-07a0a9f00845';
     $pane->panel = 'sidebar';
@@ -520,11 +489,11 @@ function hr_contacts_panelizer_defaults() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 8;
+    $pane->position = 7;
     $pane->locks = array();
     $pane->uuid = '9ce8d6b2-21ce-4eef-8b6a-07a0a9f00845';
     $display->content['new-9ce8d6b2-21ce-4eef-8b6a-07a0a9f00845'] = $pane;
-    $display->panels['sidebar'][8] = 'new-9ce8d6b2-21ce-4eef-8b6a-07a0a9f00845';
+    $display->panels['sidebar'][7] = 'new-9ce8d6b2-21ce-4eef-8b6a-07a0a9f00845';
     $pane = new stdClass();
     $pane->pid = 'new-c8897a81-595e-4e93-b054-b10ba3099e76';
     $pane->panel = 'sidebar';
@@ -551,11 +520,11 @@ function hr_contacts_panelizer_defaults() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 9;
+    $pane->position = 8;
     $pane->locks = array();
     $pane->uuid = 'c8897a81-595e-4e93-b054-b10ba3099e76';
     $display->content['new-c8897a81-595e-4e93-b054-b10ba3099e76'] = $pane;
-    $display->panels['sidebar'][9] = 'new-c8897a81-595e-4e93-b054-b10ba3099e76';
+    $display->panels['sidebar'][8] = 'new-c8897a81-595e-4e93-b054-b10ba3099e76';
     $pane = new stdClass();
     $pane->pid = 'new-4632bbda-2e6e-4aad-b41f-f51bb6c54693';
     $pane->panel = 'sidebar';
@@ -582,11 +551,11 @@ function hr_contacts_panelizer_defaults() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 10;
+    $pane->position = 9;
     $pane->locks = array();
     $pane->uuid = '4632bbda-2e6e-4aad-b41f-f51bb6c54693';
     $display->content['new-4632bbda-2e6e-4aad-b41f-f51bb6c54693'] = $pane;
-    $display->panels['sidebar'][10] = 'new-4632bbda-2e6e-4aad-b41f-f51bb6c54693';
+    $display->panels['sidebar'][9] = 'new-4632bbda-2e6e-4aad-b41f-f51bb6c54693';
     $pane = new stdClass();
     $pane->pid = 'new-bf04e705-41b0-47e0-a5ce-a5e2ad30426d';
     $pane->panel = 'sidebar';
@@ -613,11 +582,11 @@ function hr_contacts_panelizer_defaults() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 11;
+    $pane->position = 10;
     $pane->locks = array();
     $pane->uuid = 'bf04e705-41b0-47e0-a5ce-a5e2ad30426d';
     $display->content['new-bf04e705-41b0-47e0-a5ce-a5e2ad30426d'] = $pane;
-    $display->panels['sidebar'][11] = 'new-bf04e705-41b0-47e0-a5ce-a5e2ad30426d';
+    $display->panels['sidebar'][10] = 'new-bf04e705-41b0-47e0-a5ce-a5e2ad30426d';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $panelizer->display = $display;
@@ -779,22 +748,22 @@ function hr_contacts_panelizer_defaults() {
     $display->content['new-f5e8ba4c-9744-423b-b9d9-62de1409d93c'] = $pane;
     $display->panels['contentmain'][3] = 'new-f5e8ba4c-9744-423b-b9d9-62de1409d93c';
     $pane = new stdClass();
-    $pane->pid = 'new-72716deb-8417-4bd9-8731-2e5d68fc3698';
+    $pane->pid = 'new-37959c13-258a-408a-a1b6-08d1bdcfde62';
     $pane->panel = 'contentmain';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_job_title';
+    $pane->subtype = 'node:field_job_title_other';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
       'label' => 'inline',
-      'formatter' => 'entityreference_label',
+      'formatter' => 'text_default',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
-      'formatter_settings' => array(
-        'link' => FALSE,
-      ),
+      'formatter_settings' => array(),
       'context' => 'panelizer',
+      'override_title' => 0,
+      'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -804,9 +773,9 @@ function hr_contacts_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 4;
     $pane->locks = array();
-    $pane->uuid = '72716deb-8417-4bd9-8731-2e5d68fc3698';
-    $display->content['new-72716deb-8417-4bd9-8731-2e5d68fc3698'] = $pane;
-    $display->panels['contentmain'][4] = 'new-72716deb-8417-4bd9-8731-2e5d68fc3698';
+    $pane->uuid = '37959c13-258a-408a-a1b6-08d1bdcfde62';
+    $display->content['new-37959c13-258a-408a-a1b6-08d1bdcfde62'] = $pane;
+    $display->panels['contentmain'][4] = 'new-37959c13-258a-408a-a1b6-08d1bdcfde62';
     $pane = new stdClass();
     $pane->pid = 'new-8f40e448-812b-4ddf-96ba-1f550026dc27';
     $pane->panel = 'contentmain';
@@ -933,21 +902,19 @@ function hr_contacts_panelizer_defaults() {
     $display->content['new-4bdfaf12-3ac9-4361-b29e-ffa44a7508e1'] = $pane;
     $display->panels['contentmain'][1] = 'new-4bdfaf12-3ac9-4361-b29e-ffa44a7508e1';
     $pane = new stdClass();
-    $pane->pid = 'new-800e72f5-2bcb-4b7d-8c04-34b9b83fb041';
+    $pane->pid = 'new-9b66ebcd-9a7e-415f-b6de-59a9c053408d';
     $pane->panel = 'contentmain';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_job_title';
+    $pane->subtype = 'node:field_job_title_other';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'entityreference_label',
+      'label' => 'inline',
+      'formatter' => 'text_default',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
-      'formatter_settings' => array(
-        'link' => 0,
-      ),
+      'formatter_settings' => array(),
       'context' => 'panelizer',
       'override_title' => 0,
       'override_title_text' => '',
@@ -960,9 +927,9 @@ function hr_contacts_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
-    $pane->uuid = '800e72f5-2bcb-4b7d-8c04-34b9b83fb041';
-    $display->content['new-800e72f5-2bcb-4b7d-8c04-34b9b83fb041'] = $pane;
-    $display->panels['contentmain'][2] = 'new-800e72f5-2bcb-4b7d-8c04-34b9b83fb041';
+    $pane->uuid = '9b66ebcd-9a7e-415f-b6de-59a9c053408d';
+    $display->content['new-9b66ebcd-9a7e-415f-b6de-59a9c053408d'] = $pane;
+    $display->panels['contentmain'][2] = 'new-9b66ebcd-9a7e-415f-b6de-59a9c053408d';
     $pane = new stdClass();
     $pane->pid = 'new-9e9bea8c-7abe-46f7-972f-291d9075c923';
     $pane->panel = 'contentmain';
