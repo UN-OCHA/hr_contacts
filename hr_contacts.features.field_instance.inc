@@ -491,6 +491,69 @@ function hr_contacts_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-hr_contact-field_job_title'
+  $field_instances['node-hr_contact-field_job_title'] = array(
+    'bundle' => 'hr_contact',
+    'default_value' => NULL,
+    'default_value_function' => '',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 11,
+      ),
+      'search_result' => array(
+        'label' => 'inline',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 3,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_job_title',
+    'label' => 'Job Title',
+    'required' => 0,
+    'settings' => array(
+      'behaviors' => array(
+        'prepopulate' => array(
+          'status' => 0,
+        ),
+        'taxonomy-index' => array(
+          'status' => TRUE,
+        ),
+      ),
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => 1,
+      ),
+      'type' => 'options_select',
+      'weight' => 6,
+    ),
+  );
+
   // Exported field_instance: 'node-hr_contact-field_job_title_other'
   $field_instances['node-hr_contact-field_job_title_other'] = array(
     'bundle' => 'hr_contact',
@@ -1525,6 +1588,43 @@ function hr_contacts_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'taxonomy_term-hr_functional_role-name_field'
+  $field_instances['taxonomy_term-hr_functional_role-name_field'] = array(
+    'bundle' => 'hr_functional_role',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'name_field',
+    'label' => 'Name',
+    'required' => TRUE,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'hide_label' => array(
+        'entity' => FALSE,
+        'page' => FALSE,
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => -5,
+    ),
+  );
+
   // Exported field_instance: 'user-user-field_responder_in'
   $field_instances['user-user-field_responder_in'] = array(
     'bundle' => 'user',
@@ -1593,17 +1693,17 @@ function hr_contacts_field_default_field_instances() {
   t('Contacts');
   t('Coordination hubs');
   t('Emergencies');
+  t('Enter your Job Title here');
   t('Exclude name and details from the Humanitarian Contact List');
   t('First name');
   t('Funding methods');
-  t('If you selected "Other" in the above field, please enter your Job Title here');
   t('If you selected "Other" in the above field, please enter your organization name here.');
   t('Job Title');
-  t('Job Title name');
   t('Last name');
   t('Location');
   t('Locations');
   t('Main Email');
+  t('Name');
   t('Organization');
   t('Organization name');
   t('Other emails');
