@@ -39,6 +39,7 @@ features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
 features[feeds_importer][] = hr_contacts
 features[feeds_importer][] = hr_contacts_1x
+features[feeds_importer][] = hr_functional_roles
 features[feeds_tamper][] = hr_contacts-clusters_sectors-explode
 features[feeds_tamper][] = hr_contacts-coordination_hubs-explode
 features[feeds_tamper][] = hr_contacts-disasters-explode
