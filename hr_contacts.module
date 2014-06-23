@@ -14,10 +14,11 @@ function hr_contacts_menu_alter(&$items) {
 }
 
 function hr_contacts_add_node_access($op, $node, $account = NULL) {
+  global $user;
   $access = node_access($op, $node, $account);
   if ($access == TRUE && isset($_GET[OG_AUDIENCE_FIELD])) {
     $gid = $_GET[OG_AUDIENCE_FIELD];
-    if (!og_is_member('node', $gid)) {
+    if (!og_is_member('node', $gid) && !in_array('editor', $user->roles)) {
       $access = FALSE;
     }
   }
