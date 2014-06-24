@@ -68,6 +68,12 @@ function hr_contacts_context_default_contexts() {
           'region' => 'sidebar_first',
           'weight' => '-4',
         ),
+        'facetapi-9ew5LitJZ6pWU71gbHp1XW9oAOBwV11z' => array(
+          'module' => 'facetapi',
+          'delta' => '9ew5LitJZ6pWU71gbHp1XW9oAOBwV11z',
+          'region' => 'sidebar_first',
+          'weight' => '-3',
+        ),
       ),
     ),
   );
@@ -193,6 +199,12 @@ function hr_contacts_context_default_contexts() {
           'region' => 'sidebar_first',
           'weight' => '-4',
         ),
+        'facetapi-9ew5LitJZ6pWU71gbHp1XW9oAOBwV11z' => array(
+          'module' => 'facetapi',
+          'delta' => '9ew5LitJZ6pWU71gbHp1XW9oAOBwV11z',
+          'region' => 'sidebar_first',
+          'weight' => '-3',
+        ),
       ),
     ),
   );
@@ -260,6 +272,12 @@ function hr_contacts_context_default_contexts() {
           'delta' => 'hSnBts4Ap4yrSjQu7LKhsVdrHxAjyYKU',
           'region' => 'sidebar_first',
           'weight' => '-4',
+        ),
+        'facetapi-9ew5LitJZ6pWU71gbHp1XW9oAOBwV11z' => array(
+          'module' => 'facetapi',
+          'delta' => '9ew5LitJZ6pWU71gbHp1XW9oAOBwV11z',
+          'region' => 'sidebar_first',
+          'weight' => '-3',
         ),
       ),
     ),
