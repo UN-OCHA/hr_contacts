@@ -74,7 +74,7 @@ function hr_contacts_feeds_importer_default() {
           ),
           6 => array(
             'source' => 'Job Title',
-            'target' => 'field_job_title:label',
+            'target' => 'field_job_title_other',
             'unique' => FALSE,
           ),
           7 => array(
@@ -103,7 +103,7 @@ function hr_contacts_feeds_importer_default() {
             'unique' => FALSE,
           ),
           12 => array(
-            'source' => 'Space',
+            'source' => 'Spaces',
             'target' => 'og_group_ref:label',
             'unique' => FALSE,
           ),
@@ -187,7 +187,7 @@ function hr_contacts_feeds_importer_default() {
           ),
           6 => array(
             'source' => 'Job Title',
-            'target' => 'field_job_title:label',
+            'target' => 'field_job_title_other',
             'unique' => FALSE,
           ),
           7 => array(
@@ -216,7 +216,7 @@ function hr_contacts_feeds_importer_default() {
             'unique' => FALSE,
           ),
           12 => array(
-            'source' => 'Space',
+            'source' => 'Spaces',
             'target' => 'og_group_ref:label',
             'unique' => FALSE,
           ),
