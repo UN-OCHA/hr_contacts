@@ -836,6 +836,31 @@ function hr_contacts_panelizer_defaults() {
     $pane->uuid = '8f40e448-812b-4ddf-96ba-1f550026dc27';
     $display->content['new-8f40e448-812b-4ddf-96ba-1f550026dc27'] = $pane;
     $display->panels['contentmain'][5] = 'new-8f40e448-812b-4ddf-96ba-1f550026dc27';
+    $pane = new stdClass();
+    $pane->pid = 'new-15e65a5b-8a3d-4717-ad1f-338c7a8f71b7';
+    $pane->panel = 'contentmain';
+    $pane->type = 'panels_mini';
+    $pane->subtype = 'hr_node_links';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'context' => array(
+        0 => 'panelizer',
+      ),
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 6;
+    $pane->locks = array();
+    $pane->uuid = '15e65a5b-8a3d-4717-ad1f-338c7a8f71b7';
+    $display->content['new-15e65a5b-8a3d-4717-ad1f-338c7a8f71b7'] = $pane;
+    $display->panels['contentmain'][6] = 'new-15e65a5b-8a3d-4717-ad1f-338c7a8f71b7';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-1d3e5c0e-851b-4ee3-b8d2-0f4907ee5a2b';
   $panelizer->display = $display;
