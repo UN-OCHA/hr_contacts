@@ -61,22 +61,6 @@ function hr_contacts_feeds_tamper_default() {
   $feeds_tamper = new stdClass();
   $feeds_tamper->disabled = FALSE; /* Edit this to true to make a default feeds_tamper disabled initially */
   $feeds_tamper->api_version = 2;
-  $feeds_tamper->id = 'hr_contacts-fundings-explode';
-  $feeds_tamper->importer = 'hr_contacts';
-  $feeds_tamper->source = 'Fundings';
-  $feeds_tamper->plugin_id = 'explode';
-  $feeds_tamper->settings = array(
-    'separator' => ';',
-    'limit' => '',
-    'real_separator' => ';',
-  );
-  $feeds_tamper->weight = 0;
-  $feeds_tamper->description = 'Explode';
-  $export['hr_contacts-fundings-explode'] = $feeds_tamper;
-
-  $feeds_tamper = new stdClass();
-  $feeds_tamper->disabled = FALSE; /* Edit this to true to make a default feeds_tamper disabled initially */
-  $feeds_tamper->api_version = 2;
   $feeds_tamper->id = 'hr_contacts-organization-explode';
   $feeds_tamper->importer = 'hr_contacts';
   $feeds_tamper->source = 'Organization';
@@ -169,22 +153,6 @@ function hr_contacts_feeds_tamper_default() {
   $feeds_tamper->weight = 0;
   $feeds_tamper->description = 'Explode';
   $export['hr_contacts_1x-disasters-explode'] = $feeds_tamper;
-
-  $feeds_tamper = new stdClass();
-  $feeds_tamper->disabled = FALSE; /* Edit this to true to make a default feeds_tamper disabled initially */
-  $feeds_tamper->api_version = 2;
-  $feeds_tamper->id = 'hr_contacts_1x-fundings-explode';
-  $feeds_tamper->importer = 'hr_contacts_1x';
-  $feeds_tamper->source = 'Fundings';
-  $feeds_tamper->plugin_id = 'explode';
-  $feeds_tamper->settings = array(
-    'separator' => ';',
-    'limit' => '',
-    'real_separator' => ';',
-  );
-  $feeds_tamper->weight = 0;
-  $feeds_tamper->description = 'Explode';
-  $export['hr_contacts_1x-fundings-explode'] = $feeds_tamper;
 
   $feeds_tamper = new stdClass();
   $feeds_tamper->disabled = FALSE; /* Edit this to true to make a default feeds_tamper disabled initially */

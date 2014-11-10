@@ -88,21 +88,16 @@ function hr_contacts_feeds_importer_default() {
             'unique' => FALSE,
           ),
           9 => array(
-            'source' => 'Fundings',
-            'target' => 'field_funding_methods:label',
-            'unique' => FALSE,
-          ),
-          10 => array(
             'source' => 'Themes',
             'target' => 'field_themes:label',
             'unique' => FALSE,
           ),
-          11 => array(
+          10 => array(
             'source' => 'Disasters',
             'target' => 'field_disasters:label',
             'unique' => FALSE,
           ),
-          12 => array(
+          11 => array(
             'source' => 'Spaces',
             'target' => 'og_group_ref:label',
             'unique' => FALSE,
@@ -201,21 +196,16 @@ function hr_contacts_feeds_importer_default() {
             'unique' => FALSE,
           ),
           9 => array(
-            'source' => 'Fundings',
-            'target' => 'field_funding_methods:label',
-            'unique' => FALSE,
-          ),
-          10 => array(
             'source' => 'Theme(s)',
             'target' => 'field_themes:label',
             'unique' => FALSE,
           ),
-          11 => array(
+          10 => array(
             'source' => 'Disasters',
             'target' => 'field_disasters:label',
             'unique' => FALSE,
           ),
-          12 => array(
+          11 => array(
             'source' => 'Spaces',
             'target' => 'og_group_ref:label',
             'unique' => FALSE,

@@ -381,15 +381,6 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['field_coordination_hubs']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_coordination_hubs']['view_mode'] = 'full';
   $handler->display->display_options['fields']['field_coordination_hubs']['bypass_access'] = 0;
-  /* Field: Indexed Node: Funding methods */
-  $handler->display->display_options['fields']['field_funding_methods']['id'] = 'field_funding_methods';
-  $handler->display->display_options['fields']['field_funding_methods']['table'] = 'search_api_index_default_node_index';
-  $handler->display->display_options['fields']['field_funding_methods']['field'] = 'field_funding_methods';
-  $handler->display->display_options['fields']['field_funding_methods']['label'] = 'Fundings';
-  $handler->display->display_options['fields']['field_funding_methods']['list']['separator'] = ';';
-  $handler->display->display_options['fields']['field_funding_methods']['link_to_entity'] = 0;
-  $handler->display->display_options['fields']['field_funding_methods']['view_mode'] = 'full';
-  $handler->display->display_options['fields']['field_funding_methods']['bypass_access'] = 0;
   /* Field: Indexed Node: Themes */
   $handler->display->display_options['fields']['field_themes']['id'] = 'field_themes';
   $handler->display->display_options['fields']['field_themes']['table'] = 'search_api_index_default_node_index';
@@ -512,15 +503,6 @@ function hr_contacts_views_default_views() {
   $handler->display->display_options['fields']['field_coordination_hubs']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_coordination_hubs']['view_mode'] = 'full';
   $handler->display->display_options['fields']['field_coordination_hubs']['bypass_access'] = 0;
-  /* Field: Indexed Node: Funding methods */
-  $handler->display->display_options['fields']['field_funding_methods']['id'] = 'field_funding_methods';
-  $handler->display->display_options['fields']['field_funding_methods']['table'] = 'search_api_index_default_node_index';
-  $handler->display->display_options['fields']['field_funding_methods']['field'] = 'field_funding_methods';
-  $handler->display->display_options['fields']['field_funding_methods']['label'] = 'Fundings';
-  $handler->display->display_options['fields']['field_funding_methods']['list']['separator'] = ';';
-  $handler->display->display_options['fields']['field_funding_methods']['link_to_entity'] = 0;
-  $handler->display->display_options['fields']['field_funding_methods']['view_mode'] = 'full';
-  $handler->display->display_options['fields']['field_funding_methods']['bypass_access'] = 0;
   /* Field: Indexed Node: Themes */
   $handler->display->display_options['fields']['field_themes']['id'] = 'field_themes';
   $handler->display->display_options['fields']['field_themes']['table'] = 'search_api_index_default_node_index';
