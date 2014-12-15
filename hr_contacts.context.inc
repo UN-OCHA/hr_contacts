@@ -50,18 +50,6 @@ function hr_contacts_context_default_contexts() {
           'region' => 'sidebar_first',
           'weight' => '-8',
         ),
-        'facetapi-uuAHMfunWRhIHXFBp9OKWcEAqAfNQ0Pu' => array(
-          'module' => 'facetapi',
-          'delta' => 'uuAHMfunWRhIHXFBp9OKWcEAqAfNQ0Pu',
-          'region' => 'sidebar_first',
-          'weight' => '-7',
-        ),
-        'facetapi-uulIYjH3ZtSu9hhI5ARgBYQeEUNqWe17' => array(
-          'module' => 'facetapi',
-          'delta' => 'uulIYjH3ZtSu9hhI5ARgBYQeEUNqWe17',
-          'region' => 'sidebar_first',
-          'weight' => '-5',
-        ),
         'facetapi-hSnBts4Ap4yrSjQu7LKhsVdrHxAjyYKU' => array(
           'module' => 'facetapi',
           'delta' => 'hSnBts4Ap4yrSjQu7LKhsVdrHxAjyYKU',
