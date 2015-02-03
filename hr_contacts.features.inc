@@ -63,3 +63,12 @@ function hr_contacts_default_og_membership_type() {
   $items['hr_responder'] = entity_import('og_membership_type', '{ "name" : "hr_responder", "description" : "Responder", "language" : "" }');
   return $items;
 }
+
+/**
+ * Implements hook_ctools_plugin_directory().
+ */
+function hr_contacts_ctools_plugin_directory($module, $plugin) {
+  if ($module == 'restful') {
+    return 'plugins/' . $plugin;
+  }
+}
