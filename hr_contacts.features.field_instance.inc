@@ -1452,9 +1452,11 @@ function hr_contacts_field_default_field_instances() {
         'prepopulate' => array(
           'action' => 'none',
           'action_on_edit' => 0,
-          'fallback' => 'none',
-          'og_context' => 1,
-          'skip_perm' => 0,
+          'fallback' => 'form_error',
+          'providers' => array(
+            'url' => 1,
+          ),
+          'skip_perm' => 'administer modules',
           'status' => 1,
         ),
       ),
