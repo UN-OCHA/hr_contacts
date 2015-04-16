@@ -2,8 +2,8 @@
 
 $plugin = array(
   'single' => TRUE,
-  'title' => t('Key Contacts'),
-  'description' => t('Display key contacts.'),
+  'title' => t('Static'),
+  'description' => t('Chose which contacts to display'),
   'category' => t('Contacts'),
   'edit form' => 'hr_contacts_key_contacts_edit_form',
   'render callback' => 'hr_contacts_key_contacts_render',

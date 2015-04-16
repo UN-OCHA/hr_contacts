@@ -2048,7 +2048,7 @@ function hr_contacts_views_default_views() {
 
   /* Display: List */
   $handler = $view->new_display('panel_pane', 'List', 'list');
-  $handler->display->display_options['pane_title'] = 'Contacts per space';
+  $handler->display->display_options['pane_title'] = 'Dynamic';
   $handler->display->display_options['pane_category']['name'] = 'Contacts';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['allow']['use_pager'] = 'use_pager';
