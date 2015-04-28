@@ -205,6 +205,19 @@ function hr_contacts_search_api_views_query_alter(&$view, &$query) {
   }
 }
 
+/**
+ * Implements hook_views_pre_render()
+ * Adds PDF button to export events as PDF
+ * See http://atrium.humanitarianresponse.info/humanitarian_response/node/4466 
+ */
+function hr_contacts_views_pre_render(&$view) {
+  if ($view->name == 'hr_contacts') {
+    if ($view->current_display == 'master' || $view->current_display == 'table' || $view->current_display == 'list') {
+      $view->feed_icon .= '<li>'.l('PDF', str_replace('/contacts', '/contacts/pdf', current_path()), array('attributes' => array('target' => 'about:blank'))).'</li>';
+    }
+  }
+}
+
 
 /**
  * Implements hook_og_membership_insert()
@@ -235,5 +248,49 @@ function hr_contacts_ctools_plugin_directory($module, $plugin) {
   if ($module == 'ctools' && $plugin == 'content_types') {
     return 'plugins/' . $plugin;
   }
+}
+
+/**
+ * Implements hook_menu()
+ * Defines the menu callbacks necessary to print the contacts in PDF format
+ * See http://atrium.humanitarianresponse.info/humanitarian_response/node/4466
+ */
+function hr_contacts_menu() {
+  $items['node/%/contacts/pdf'] = array(
+    'page callback' => 'hr_contacts_pdf_output',
+    'page arguments' => array(1),
+    'access arguments' => array('access content'),
+  );
+  return $items;
+}
+
+function hr_contacts_pdf_output($nid) {
+  $path = current_path();
+  $node = entity_load_single('node', $nid);
+  $label = entity_label('node', $node);
+  $label = transliteration_clean_filename($label);
+  $html_path = str_replace('/pdf', '/print', $path);
+  // Print PDF using wkhtmltopdf service
+  $html_url = url($html_path, array('absolute' => TRUE));
+  $params = array(
+    'url' => $html_url,
+    'params' => array(
+      'print-media-type' => 'true',
+      'footer-left' => t('Page [page] of [topage]'),
+      'footer-right' => t('Powered by HUMANITARIAN RESPONSE. Date of creation: [date]')."\nhttp://www.humanitarianresponse.info",
+      'footer-font-name' => 'Exo 2',
+      'footer-font-size' => '8',
+      'footer-spacing' => '2',
+    ),
+  );
+  $url = HR_EVENTS_WKHTMLTOPDF.'?'.http_build_query($params, NULL, '&');
+  $req_params = array(
+    'method' => 'POST',
+  );
+  drupal_add_http_header('Content-Type', 'application/pdf; charset=utf-8');
+  drupal_add_http_header('Content-Disposition', 'attachment;filename="'.t('contacts').'.pdf"');
+  $output = chr_curl_http_request($url, $req_params);
+  echo $output->data;
+  exit;
 }
 
