@@ -93,7 +93,9 @@ function hr_contacts_key_contacts_render($subtype, $conf, $panel_args, $context 
       if (isset($contact['entity_id'])) {
         $nid = $contact['entity_id'];
         $node = node_load($nid);
-        $block->content .= drupal_render(node_view($node, 'teaser'));
+        if ($node != FALSE) {
+          $block->content .= drupal_render(node_view($node, 'teaser'));
+        }
       }
     }
 
