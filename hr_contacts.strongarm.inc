@@ -21,7 +21,7 @@ function hr_contacts_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'auto_entitylabel_pattern_node_hr_contact';
-  $strongarm->value = '[node:field_first_name] [node:field_last_name]';
+  $strongarm->value = '[node:field-first-name] [node:field-last-name]';
   $export['auto_entitylabel_pattern_node_hr_contact'] = $strongarm;
 
   $strongarm = new stdClass();
